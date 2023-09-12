@@ -1699,36 +1699,7 @@ Supervisor: No
 Can I also say eighty-one hundred and eighty-one?
 Supervisor: No
 Function _ hundred and _ maps {1,2,3,4,5,6,7,8,9}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
-one is 1
-two is 2
-three is 3
-four is 4
-five is 5
-six is 6
-seven is 7
-eight is 8
-nine is 9
-ten is 10
-eleven is 11
-twelve is 12
-thirteen is 13
-fifteen is 15
-Function _teen maps {4,6,7,9} by x -> 1*x+10
-Function _een maps {8} by x -> 0*x+18
-twenty is 20
-Function twenty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+20
-thirty is 30
-Function thirty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+30
-forty is 40
-Function forty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+40
-fifty is 50
-Function fifty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+50
-Function _ty maps {6,7,9} by x -> 10*x+0
-Function _ty-_ maps {6,7,9}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
-Function _y maps {8} by x -> 0*x+80
-Function _y-_ maps {8}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
-Function _ hundred maps {1,2,3,4,5,6,7,8,9} by x -> 100*x+0
-Function _ hundred and _ maps {1,2,3,4,5,6,7,8,9}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
+
 Learned 999 words in English and structured them in 30 functions.
 It took 42 samples to learn those.
 Those are:
