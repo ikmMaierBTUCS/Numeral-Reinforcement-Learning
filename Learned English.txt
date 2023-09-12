@@ -1,0 +1,1765 @@
+learn_language('English')
+
+Out:
+Learning English
+What means 1?
+Supervisor: one
+1=one()
+one is 1
+What means 2?
+Supervisor: two
+2=two()
+two is 2
+What means 3?
+Supervisor: three
+3=three()
+three is 3
+What means 4?
+Supervisor: four
+4=four()
+four is 4
+What means 5?
+Supervisor: five
+5=five()
+five is 5
+What means 6?
+Supervisor: six
+6=six()
+six is 6
+What means 7?
+Supervisor: seven
+7=seven()
+seven is 7
+What means 8?
+Supervisor: eight
+8=eight()
+eight is 8
+What means 9?
+Supervisor: nine
+9=nine()
+nine is 9
+What means 10?
+Supervisor: ten
+10=ten()
+ten is 10
+What means 11?
+Supervisor: eleven
+11=eleven()
+eleven is 11
+What means 12?
+Supervisor: twelve
+12=twelve()
+twelve is 12
+What means 13?
+Supervisor: thirteen
+13=thirteen()
+thirteen is 13
+What means 14?
+Supervisor: fourteen
+14=_teen(4)
+Function _teen maps {4} by x -> 0*x+14
+What means 15?
+Supervisor: fifteen
+15=fifteen()
+fifteen is 15
+What means 16?
+Supervisor: sixteen
+16=_teen(6)
+Function _teen maps {4,6} by x -> 1*x+10
+Attempting reinforcement
+Can I also say seventeen?
+Supervisor: Yes
+Function _teen maps {4,6,7} by x -> 1*x+10
+Can I also say eightteen?
+Supervisor: No
+Can I also say nineteen?
+Supervisor: Yes
+Function _teen maps {4,6,7,9} by x -> 1*x+10
+Can I also say tenteen?
+Supervisor: No
+Function _teen maps {4,6,7,9} by x -> 1*x+10
+What means 18?
+Supervisor: eighteen
+18=_een(8)
+Function _een maps {8} by x -> 0*x+18
+What means 20?
+Supervisor: twenty
+20=twenty()
+twenty is 20
+What means 21?
+Supervisor: twenty-one
+21=twenty-_(1)
+Function twenty-_ maps {1} by x -> 0*x+21
+What means 22?
+Supervisor: twenty-two
+22=twenty-_(2)
+Function twenty-_ maps {1,2} by x -> 1*x+20
+Attempting reinforcement
+Can I also say twenty-three?
+Supervisor: Yes
+Function twenty-_ maps {1,2,3} by x -> 1*x+20
+Can I also say twenty-four?
+Supervisor: Yes
+Function twenty-_ maps {1,2,3,4} by x -> 1*x+20
+Can I also say twenty-five?
+Supervisor: Yes
+Function twenty-_ maps {1,2,3,4,5} by x -> 1*x+20
+Can I also say twenty-six?
+Supervisor: Yes
+Function twenty-_ maps {1,2,3,4,5,6} by x -> 1*x+20
+Can I also say twenty-seven?
+Supervisor: Yes
+Function twenty-_ maps {1,2,3,4,5,6,7} by x -> 1*x+20
+Can I also say twenty-eight?
+Supervisor: Yes
+Function twenty-_ maps {1,2,3,4,5,6,7,8} by x -> 1*x+20
+Can I also say twenty-nine?
+Supervisor: Yes
+Function twenty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+20
+Can I also say twenty-ten?
+Supervisor: No
+Can I also say twenty-eleven?
+Supervisor: No
+Can I also say twenty-twelve?
+Supervisor: No
+Can I also say twenty-thirteen?
+Supervisor: No
+Can I also say twenty-fifteen?
+Supervisor: No
+Can I also say twenty-fourteen?
+Supervisor: No
+Can I also say twenty-eighteen?
+Supervisor: No
+Can I also say twenty-twenty?
+Supervisor: No
+Function twenty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+20
+What means 30?
+Supervisor: thirty
+30=thirty()
+thirty is 30
+What means 31?
+Supervisor: thirty-one
+31=thirty-_(1)
+Function thirty-_ maps {1} by x -> 0*x+31
+What means 32?
+Supervisor: thirty-two
+32=thirty-_(2)
+Function thirty-_ maps {1,2} by x -> 1*x+30
+Attempting reinforcement
+Can I also say thirty-three?
+Supervisor: Yes
+Function thirty-_ maps {1,2,3} by x -> 1*x+30
+Can I also say thirty-four?
+Supervisor: Yes
+Function thirty-_ maps {1,2,3,4} by x -> 1*x+30
+Can I also say thirty-five?
+Supervisor: Yes
+Function thirty-_ maps {1,2,3,4,5} by x -> 1*x+30
+Can I also say thirty-six?
+Supervisor: Yes
+Function thirty-_ maps {1,2,3,4,5,6} by x -> 1*x+30
+Can I also say thirty-seven?
+Supervisor: Yes
+Function thirty-_ maps {1,2,3,4,5,6,7} by x -> 1*x+30
+Can I also say thirty-eight?
+Supervisor: Yes
+Function thirty-_ maps {1,2,3,4,5,6,7,8} by x -> 1*x+30
+Can I also say thirty-nine?
+Supervisor: Yes
+Function thirty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+30
+Can I also say thirty-ten?
+Supervisor: No
+Can I also say thirty-eleven?
+Supervisor: No
+Can I also say thirty-twelve?
+Supervisor: No
+Can I also say thirty-thirteen?
+Supervisor: No
+Can I also say thirty-fifteen?
+Supervisor: No
+Can I also say thirty-fourteen?
+Supervisor: No
+Can I also say thirty-eighteen?
+Supervisor: No
+Can I also say thirty-twenty?
+Supervisor: No
+Can I also say thirty-twenty-one?
+Supervisor: No
+Can I also say thirty-thirty?
+Supervisor: No
+Function thirty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+30
+What means 40?
+Supervisor: forty
+40=forty()
+forty is 40
+What means 41?
+Supervisor: forty-one
+41=forty-_(1)
+Function forty-_ maps {1} by x -> 0*x+41
+What means 42?
+Supervisor: forty-two
+42=forty-_(2)
+Function forty-_ maps {1,2} by x -> 1*x+40
+Attempting reinforcement
+Can I also say forty-three?
+Supervisor: Yes
+Function forty-_ maps {1,2,3} by x -> 1*x+40
+Can I also say forty-four?
+Supervisor: Yes
+Function forty-_ maps {1,2,3,4} by x -> 1*x+40
+Can I also say forty-five?
+Supervisor: Yes
+Function forty-_ maps {1,2,3,4,5} by x -> 1*x+40
+Can I also say forty-six?
+Supervisor: Yes
+Function forty-_ maps {1,2,3,4,5,6} by x -> 1*x+40
+Can I also say forty-seven?
+Supervisor: Yes
+Function forty-_ maps {1,2,3,4,5,6,7} by x -> 1*x+40
+Can I also say forty-eight?
+Supervisor: Yes
+Function forty-_ maps {1,2,3,4,5,6,7,8} by x -> 1*x+40
+Can I also say forty-nine?
+Supervisor: Yes
+Function forty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+40
+Can I also say forty-ten?
+Supervisor: No
+Can I also say forty-eleven?
+Supervisor: No
+Can I also say forty-twelve?
+Supervisor: No
+Can I also say forty-thirteen?
+Supervisor: No
+Can I also say forty-fifteen?
+Supervisor: No
+Can I also say forty-fourteen?
+Supervisor: No
+Can I also say forty-eighteen?
+Supervisor: No
+Can I also say forty-twenty?
+Supervisor: No
+Can I also say forty-twenty-one?
+Supervisor: No
+Can I also say forty-thirty?
+Supervisor: No
+Can I also say forty-thirty-one?
+Supervisor: No
+Can I also say forty-forty?
+Supervisor: No
+Function forty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+40
+What means 50?
+Supervisor: fifty
+50=fifty()
+fifty is 50
+What means 51?
+Supervisor: fifty-one
+51=fifty-_(1)
+Function fifty-_ maps {1} by x -> 0*x+51
+What means 52?
+Supervisor: fifty-two
+52=fifty-_(2)
+Function fifty-_ maps {1,2} by x -> 1*x+50
+Attempting reinforcement
+Can I also say fifty-three?
+Supervisor: Yes
+Function fifty-_ maps {1,2,3} by x -> 1*x+50
+Can I also say fifty-four?
+Supervisor: Yes
+Function fifty-_ maps {1,2,3,4} by x -> 1*x+50
+Can I also say fifty-five?
+Supervisor: Yes
+Function fifty-_ maps {1,2,3,4,5} by x -> 1*x+50
+Can I also say fifty-six?
+Supervisor: Yes
+Function fifty-_ maps {1,2,3,4,5,6} by x -> 1*x+50
+Can I also say fifty-seven?
+Supervisor: Yes
+Function fifty-_ maps {1,2,3,4,5,6,7} by x -> 1*x+50
+Can I also say fifty-eight?
+Supervisor: Yes
+Function fifty-_ maps {1,2,3,4,5,6,7,8} by x -> 1*x+50
+Can I also say fifty-nine?
+Supervisor: Yes
+Function fifty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+50
+Can I also say fifty-ten?
+Supervisor: No
+Can I also say fifty-eleven?
+Supervisor: No
+Can I also say fifty-twelve?
+Supervisor: No
+Can I also say fifty-thirteen?
+Supervisor: No
+Can I also say fifty-fifteen?
+Supervisor: No
+Can I also say fifty-fourteen?
+Supervisor: No
+Can I also say fifty-eighteen?
+Supervisor: No
+Can I also say fifty-twenty?
+Supervisor: No
+Can I also say fifty-twenty-one?
+Supervisor: No
+Can I also say fifty-thirty?
+Supervisor: No
+Can I also say fifty-thirty-one?
+Supervisor: No
+Can I also say fifty-forty?
+Supervisor: No
+Can I also say fifty-forty-one?
+Supervisor: No
+Can I also say fifty-fifty?
+Supervisor: No
+Function fifty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+50
+What means 60?
+Supervisor: sixty
+60=_ty(6)
+Function _ty maps {6} by x -> 0*x+60
+What means 61?
+Supervisor: sixty-one
+61=_ty-_(6,1)
+Function _ty-_ maps {6}x{1} by (x0,x1) -> 0*x0+0*x1+61
+What means 62?
+Supervisor: sixty-two
+62=_ty-_(6,2)
+Function _ty-_ maps {6}x{1,2} by (x0,x1) -> 10*x0+1*x1
+Attempting reinforcement
+Can I also say sixty-three?
+Supervisor: Yes
+Function _ty-_ maps {6}x{1,2,3} by (x0,x1) -> 10*x0+1*x1
+Can I also say sixty-four?
+Supervisor: Yes
+Function _ty-_ maps {6}x{1,2,3,4} by (x0,x1) -> 10*x0+1*x1
+Can I also say sixty-five?
+Supervisor: Yes
+Function _ty-_ maps {6}x{1,2,3,4,5} by (x0,x1) -> 10*x0+1*x1
+Can I also say sixty-six?
+Supervisor: Yes
+Function _ty-_ maps {6}x{1,2,3,4,5,6} by (x0,x1) -> 10*x0+1*x1
+Can I also say sixty-seven?
+Supervisor: Yes
+Function _ty-_ maps {6}x{1,2,3,4,5,6,7} by (x0,x1) -> 10*x0+1*x1
+Can I also say sixty-eight?
+Supervisor: Yes
+Function _ty-_ maps {6}x{1,2,3,4,5,6,7,8} by (x0,x1) -> 10*x0+1*x1
+Can I also say sixty-nine?
+Supervisor: Yes
+Function _ty-_ maps {6}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
+Can I also say sixty-ten?
+Supervisor: No
+Function _ty-_ maps {6}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
+What means 70?
+Supervisor: seventy
+70=_ty(7)
+Function _ty maps {6,7} by x -> 10*x+0
+Attempting reinforcement
+Can I also say eightty?
+Supervisor: No
+Can I also say ninety?
+Supervisor: Yes
+Function _ty maps {6,7,9} by x -> 10*x+0
+Function _ty maps {6,7,9} by x -> 10*x+0
+What means 71?
+Supervisor: seventy-one
+71=_ty-_(7,1)
+Function _ty-_ maps {6,7}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
+Attempting reinforcement
+Can I also say seventy-ten?
+Supervisor: No
+Can I also say eightty-one?
+Supervisor: No
+Can I also say eightty-two?
+Supervisor: No
+Can I also say eightty-three?
+Supervisor: No
+Can I also say eightty-four?
+Supervisor: No
+Can I also say eightty-five?
+Supervisor: No
+Can I also say eightty-six?
+Supervisor: No
+Can I also say eightty-seven?
+Supervisor: No
+Can I also say eightty-eight?
+Supervisor: No
+Can I also say eightty-nine?
+Supervisor: No
+Can I also say ninety-one?
+Supervisor: Yes
+Function _ty-_ maps {6,7,9}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
+Can I also say ninety-ten?
+Supervisor: No
+Can I also say tenty-one?
+Supervisor: No
+Can I also say tenty-two?
+Supervisor: No
+Can I also say tenty-three?
+Supervisor: No
+Can I also say tenty-four?
+Supervisor: No
+Can I also say tenty-five?
+Supervisor: No
+Can I also say tenty-six?
+Supervisor: No
+Can I also say tenty-seven?
+Supervisor: No
+Can I also say tenty-eight?
+Supervisor: No
+Can I also say tenty-nine?
+Supervisor: No
+Can I also say tenty-ten?
+Supervisor: No
+Function _ty-_ maps {6,7,9}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
+What means 80?
+Supervisor: eighty
+80=_y(8)
+Function _y maps {8} by x -> 0*x+80
+What means 81?
+Supervisor: eighty-one
+81=_y-_(8,1)
+Function _y-_ maps {8}x{1} by (x0,x1) -> 0*x0+0*x1+81
+What means 82?
+Supervisor: eighty-two
+82=_y-_(8,2)
+Function _y-_ maps {8}x{1,2} by (x0,x1) -> 10*x0+1*x1
+Attempting reinforcement
+Can I also say eighty-three?
+Supervisor: Yes
+Function _y-_ maps {8}x{1,2,3} by (x0,x1) -> 10*x0+1*x1
+Can I also say eighty-four?
+Supervisor: Yes
+Function _y-_ maps {8}x{1,2,3,4} by (x0,x1) -> 10*x0+1*x1
+Can I also say eighty-five?
+Supervisor: Yes
+Function _y-_ maps {8}x{1,2,3,4,5} by (x0,x1) -> 10*x0+1*x1
+Can I also say eighty-six?
+Supervisor: Yes
+Function _y-_ maps {8}x{1,2,3,4,5,6} by (x0,x1) -> 10*x0+1*x1
+Can I also say eighty-seven?
+Supervisor: Yes
+
+Function _y-_ maps {8}x{1,2,3,4,5,6,7} by (x0,x1) -> 10*x0+1*x1
+Can I also say eighty-eight?
+Supervisor: Yes
+Function _y-_ maps {8}x{1,2,3,4,5,6,7,8} by (x0,x1) -> 10*x0+1*x1
+Can I also say eighty-nine?
+Supervisor: Yes
+Function _y-_ maps {8}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
+Function _y-_ maps {8}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
+What means 100?
+Supervisor: one hundred
+100=_ hundred(1)
+Function _ hundred maps {1} by x -> 0*x+100
+What means 101?
+Supervisor: one hundred and one
+101=_ hundred and _(1,1)
+Function _ hundred and _ maps {1}x{1} by (x0,x1) -> 0*x0+0*x1+101
+What means 102?
+Supervisor: one hundred and two
+102=_ hundred and _(1,2)
+Function _ hundred and _ maps {1}x{1,2} by (x0,x1) -> 50*x0+1*x1+50
+Attempting reinforcement
+Can I also say one hundred and three?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and four?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and five?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and six?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and seven?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and eight?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and nine?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and ten?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and eleven?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and twelve?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and thirteen?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and fifteen?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and fourteen?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and eighteen?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and twenty?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and twenty-one?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and thirty?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and thirty-one?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and forty?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and forty-one?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and fifty?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and fifty-one?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and sixty?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and sixty-one?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and eighty?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and eighty-one?
+Supervisor: Yes
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 50*x0+1*x1+50
+Can I also say one hundred and one hundred?
+Supervisor: No
+Function _ hundred and _ maps {1}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 50*x0+1*x1+50
+What means 200?
+Supervisor: two hundred
+200=_ hundred(2)
+Function _ hundred maps {1,2} by x -> 100*x+0
+Attempting reinforcement
+Can I also say three hundred?
+Supervisor: Yes
+Function _ hundred maps {1,2,3} by x -> 100*x+0
+Can I also say four hundred?
+Supervisor: Yes
+Function _ hundred maps {1,2,3,4} by x -> 100*x+0
+Can I also say five hundred?
+Supervisor: Yes
+Function _ hundred maps {1,2,3,4,5} by x -> 100*x+0
+Can I also say six hundred?
+Supervisor: Yes
+Function _ hundred maps {1,2,3,4,5,6} by x -> 100*x+0
+Can I also say seven hundred?
+Supervisor: Yes
+Function _ hundred maps {1,2,3,4,5,6,7} by x -> 100*x+0
+Can I also say eight hundred?
+Supervisor: Yes
+Function _ hundred maps {1,2,3,4,5,6,7,8} by x -> 100*x+0
+Can I also say nine hundred?
+Supervisor: Yes
+Function _ hundred maps {1,2,3,4,5,6,7,8,9} by x -> 100*x+0
+Can I also say ten hundred?
+Supervisor: No
+Can I also say eleven hundred?
+Supervisor: No
+Can I also say twelve hundred?
+Supervisor: No
+Can I also say thirteen hundred?
+Supervisor: No
+Can I also say fifteen hundred?
+Supervisor: No
+Can I also say fourteen hundred?
+Supervisor: No
+Can I also say eighteen hundred?
+Supervisor: No
+Can I also say twenty hundred?
+Supervisor: No
+Can I also say twenty-one hundred?
+Supervisor: No
+Can I also say thirty hundred?
+Supervisor: No
+Can I also say thirty-one hundred?
+Supervisor: No
+Can I also say forty hundred?
+Supervisor: No
+Can I also say forty-one hundred?
+Supervisor: No
+Can I also say fifty hundred?
+Supervisor: No
+Can I also say fifty-one hundred?
+Supervisor: No
+Can I also say sixty hundred?
+Supervisor: No
+Can I also say sixty-one hundred?
+Supervisor: No
+Can I also say eighty hundred?
+Supervisor: No
+Can I also say eighty-one hundred?
+Supervisor: No
+Function _ hundred maps {1,2,3,4,5,6,7,8,9} by x -> 100*x+0
+What means 201?
+Supervisor: two hundred and one
+201=_ hundred and _(2,1)
+Function _ hundred and _ maps {1,2}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
+Attempting reinforcement
+Can I also say three hundred and one?
+Supervisor: Yes
+Function _ hundred and _ maps {1,2,3}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
+Can I also say four hundred and one?
+Supervisor: Yes
+Function _ hundred and _ maps {1,2,3,4}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
+Can I also say five hundred and one?
+Supervisor: Yes
+Function _ hundred and _ maps {1,2,3,4,5}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
+Can I also say six hundred and one?
+Supervisor: Yes
+Function _ hundred and _ maps {1,2,3,4,5,6}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
+Can I also say seven hundred and one?
+Supervisor: Yes
+Function _ hundred and _ maps {1,2,3,4,5,6,7}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
+Can I also say eight hundred and one?
+Supervisor: Yes
+Function _ hundred and _ maps {1,2,3,4,5,6,7,8}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
+Can I also say nine hundred and one?
+Supervisor: Yes
+Function _ hundred and _ maps {1,2,3,4,5,6,7,8,9}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
+Can I also say ten hundred and one?
+Supervisor: No
+
+Can I also say ten hundred and two?
+Supervisor: No
+Can I also say ten hundred and three?
+Supervisor: No
+Can I also say ten hundred and four?
+Supervisor: No
+Can I also say ten hundred and five?
+Supervisor: No
+Can I also say ten hundred and six?
+Supervisor: No
+Can I also say ten hundred and seven?
+Supervisor: No
+Can I also say ten hundred and eight?
+Supervisor: No
+Can I also say ten hundred and nine?
+Supervisor: No
+Can I also say ten hundred and ten?
+Supervisor: No
+Can I also say ten hundred and eleven?
+Supervisor: No
+Can I also say ten hundred and twelve?
+Supervisor: No
+Can I also say ten hundred and thirteen?
+Supervisor: No
+Can I also say ten hundred and fifteen?
+Supervisor: No
+Can I also say ten hundred and fourteen?
+Supervisor: No
+Can I also say ten hundred and eighteen?
+Supervisor: No
+Can I also say ten hundred and twenty?
+Supervisor: No
+Can I also say ten hundred and twenty-one?
+Supervisor: No
+Can I also say ten hundred and thirty?
+Supervisor: No
+Can I also say ten hundred and thirty-one?
+Supervisor: No
+Can I also say ten hundred and forty?
+Supervisor: No
+Can I also say ten hundred and forty-one?
+Supervisor: No
+Can I also say ten hundred and fifty?
+Supervisor: No
+Can I also say ten hundred and fifty-one?
+Supervisor: No
+Can I also say ten hundred and sixty?
+Supervisor: No
+Can I also say ten hundred and sixty-one?
+Supervisor: No
+Can I also say ten hundred and eighty?
+Supervisor: No
+Can I also say ten hundred and eighty-one?
+Supervisor: No
+Can I also say eleven hundred and one?
+Supervisor: No
+Can I also say eleven hundred and two?
+Supervisor: No
+Can I also say eleven hundred and three?
+Supervisor: No
+Can I also say eleven hundred and four?
+Supervisor: No
+Can I also say eleven hundred and five?
+Supervisor: No
+Can I also say eleven hundred and six?
+Supervisor: No
+Can I also say eleven hundred and seven?
+Supervisor: No
+Can I also say eleven hundred and eight?
+Supervisor: No
+Can I also say eleven hundred and nine?
+Supervisor: No
+Can I also say eleven hundred and ten?
+Supervisor: No
+Can I also say eleven hundred and eleven?
+Supervisor: No
+Can I also say eleven hundred and twelve?
+Supervisor: No
+Can I also say eleven hundred and thirteen?
+Supervisor: No
+Can I also say eleven hundred and fifteen?
+Supervisor: No
+Can I also say eleven hundred and fourteen?
+Supervisor: No
+Can I also say eleven hundred and eighteen?
+Supervisor: No
+Can I also say eleven hundred and twenty?
+Supervisor: No
+Can I also say eleven hundred and twenty-one?
+Supervisor: No
+Can I also say eleven hundred and thirty?
+Supervisor: No
+Can I also say eleven hundred and thirty-one?
+Supervisor: No
+Can I also say eleven hundred and forty?
+Supervisor: No
+Can I also say eleven hundred and forty-one?
+Supervisor: No
+Can I also say eleven hundred and fifty?
+Supervisor: No
+Can I also say eleven hundred and fifty-one?
+Supervisor: No
+Can I also say eleven hundred and sixty?
+Supervisor: No
+Can I also say eleven hundred and sixty-one?
+Supervisor: No
+Can I also say eleven hundred and eighty?
+Supervisor: No
+Can I also say eleven hundred and eighty-one?
+Supervisor: No
+Can I also say twelve hundred and one?
+Supervisor: No
+Can I also say twelve hundred and two?
+Supervisor: No
+Can I also say twelve hundred and three?
+Supervisor: No
+Can I also say twelve hundred and four?
+Supervisor: No
+Can I also say twelve hundred and five?
+Supervisor: No
+Can I also say twelve hundred and six?
+Supervisor: No
+Can I also say twelve hundred and seven?
+Supervisor: No
+Can I also say twelve hundred and eight?
+Supervisor: No
+Can I also say twelve hundred and nine?
+Supervisor: No
+Can I also say twelve hundred and ten?
+Supervisor: No
+Can I also say twelve hundred and eleven?
+Supervisor: No
+Can I also say twelve hundred and twelve?
+Supervisor: No
+Can I also say twelve hundred and thirteen?
+Supervisor: No
+Can I also say twelve hundred and fifteen?
+Supervisor: No
+Can I also say twelve hundred and fourteen?
+Supervisor: No
+Can I also say twelve hundred and eighteen?
+Supervisor: No
+Can I also say twelve hundred and twenty?
+Supervisor: No
+Can I also say twelve hundred and twenty-one?
+Supervisor: No
+Can I also say twelve hundred and thirty?
+Supervisor: No
+Can I also say twelve hundred and thirty-one?
+Supervisor: No
+Can I also say twelve hundred and forty?
+Supervisor: No
+Can I also say twelve hundred and forty-one?
+Supervisor: No
+Can I also say twelve hundred and fifty?
+Supervisor: No
+Can I also say twelve hundred and fifty-one?
+Supervisor: No
+Can I also say twelve hundred and sixty?
+Supervisor: No
+Can I also say twelve hundred and sixty-one?
+Supervisor: No
+Can I also say twelve hundred and eighty?
+Supervisor: No
+Can I also say twelve hundred and eighty-one?
+Supervisor: No
+Can I also say thirteen hundred and one?
+Supervisor: No
+Can I also say thirteen hundred and two?
+Supervisor: No
+Can I also say thirteen hundred and three?
+Supervisor: No
+Can I also say thirteen hundred and four?
+Supervisor: No
+Can I also say thirteen hundred and five?
+Supervisor: No
+Can I also say thirteen hundred and six?
+Supervisor: No
+Can I also say thirteen hundred and seven?
+Supervisor: No
+Can I also say thirteen hundred and eight?
+Supervisor: No
+Can I also say thirteen hundred and nine?
+Supervisor: No
+Can I also say thirteen hundred and ten?
+Supervisor: No
+Can I also say thirteen hundred and eleven?
+Supervisor: No
+Can I also say thirteen hundred and twelve?
+Supervisor: No
+Can I also say thirteen hundred and thirteen?
+Supervisor: No
+Can I also say thirteen hundred and fifteen?
+Supervisor: No
+Can I also say thirteen hundred and fourteen?
+Supervisor: No
+Can I also say thirteen hundred and eighteen?
+Supervisor: No
+Can I also say thirteen hundred and twenty?
+Supervisor: No
+Can I also say thirteen hundred and twenty-one?
+Supervisor: No
+Can I also say thirteen hundred and thirty?
+Supervisor: No
+Can I also say thirteen hundred and thirty-one?
+Supervisor: No
+Can I also say thirteen hundred and forty?
+Supervisor: No
+Can I also say thirteen hundred and forty-one?
+Supervisor: No
+Can I also say thirteen hundred and fifty?
+Supervisor: No
+Can I also say thirteen hundred and fifty-one?
+Supervisor: No
+Can I also say thirteen hundred and sixty?
+Supervisor: No
+Can I also say thirteen hundred and sixty-one?
+Supervisor: No
+Can I also say thirteen hundred and eighty?
+Supervisor: No
+Can I also say thirteen hundred and eighty-one?
+Supervisor: No
+Can I also say fifteen hundred and one?
+Supervisor: No
+Can I also say fifteen hundred and two?
+Supervisor: No
+Can I also say fifteen hundred and three?
+Supervisor: No
+Can I also say fifteen hundred and four?
+Supervisor: No
+Can I also say fifteen hundred and five?
+Supervisor: No
+Can I also say fifteen hundred and six?
+Supervisor: No
+Can I also say fifteen hundred and seven?
+Supervisor: No
+Can I also say fifteen hundred and eight?
+Supervisor: No
+Can I also say fifteen hundred and nine?
+Supervisor: No
+Can I also say fifteen hundred and ten?
+Supervisor: No
+Can I also say fifteen hundred and eleven?
+Supervisor: No
+Can I also say fifteen hundred and twelve?
+Supervisor: No
+Can I also say fifteen hundred and thirteen?
+Supervisor: No
+Can I also say fifteen hundred and fifteen?
+Supervisor: No
+Can I also say fifteen hundred and fourteen?
+Supervisor: No
+Can I also say fifteen hundred and eighteen?
+Supervisor: No
+Can I also say fifteen hundred and twenty?
+Supervisor: No
+Can I also say fifteen hundred and twenty-one?
+Supervisor: No
+Can I also say fifteen hundred and thirty?
+Supervisor: No
+Can I also say fifteen hundred and thirty-one?
+Supervisor: No
+Can I also say fifteen hundred and forty?
+Supervisor: No
+Can I also say fifteen hundred and forty-one?
+Supervisor: No
+Can I also say fifteen hundred and fifty?
+Supervisor: No
+Can I also say fifteen hundred and fifty-one?
+Supervisor: No
+Can I also say fifteen hundred and sixty?
+Supervisor: No
+Can I also say fifteen hundred and sixty-one?
+Supervisor: No
+Can I also say fifteen hundred and eighty?
+Supervisor: No
+Can I also say fifteen hundred and eighty-one?
+Supervisor: No
+Can I also say fourteen hundred and one?
+Supervisor: No
+Can I also say fourteen hundred and two?
+Supervisor: No
+Can I also say fourteen hundred and three?
+Supervisor: No
+Can I also say fourteen hundred and four?
+Supervisor: No
+Can I also say fourteen hundred and five?
+Supervisor: No
+Can I also say fourteen hundred and six?
+Supervisor: No
+Can I also say fourteen hundred and seven?
+Supervisor: No
+Can I also say fourteen hundred and eight?
+Supervisor: No
+Can I also say fourteen hundred and nine?
+Supervisor: No
+Can I also say fourteen hundred and ten?
+Supervisor: No
+Can I also say fourteen hundred and eleven?
+Supervisor: No
+Can I also say fourteen hundred and twelve?
+Supervisor: No
+Can I also say fourteen hundred and thirteen?
+Supervisor: No
+Can I also say fourteen hundred and fifteen?
+Supervisor: No
+Can I also say fourteen hundred and fourteen?
+Supervisor: No
+Can I also say fourteen hundred and eighteen?
+Supervisor: No
+Can I also say fourteen hundred and twenty?
+Supervisor: No
+
+Can I also say fourteen hundred and twenty-one?
+Supervisor: No
+Can I also say fourteen hundred and thirty?
+Supervisor: No
+Can I also say fourteen hundred and thirty-one?
+Supervisor: No
+Can I also say fourteen hundred and forty?
+Supervisor: No
+Can I also say fourteen hundred and forty-one?
+Supervisor: No
+Can I also say fourteen hundred and fifty?
+Supervisor: No
+Can I also say fourteen hundred and fifty-one?
+Supervisor: No
+Can I also say fourteen hundred and sixty?
+Supervisor: No
+Can I also say fourteen hundred and sixty-one?
+Supervisor: No
+Can I also say fourteen hundred and eighty?
+Supervisor: No
+Can I also say fourteen hundred and eighty-one?
+Supervisor: No
+Can I also say eighteen hundred and one?
+Supervisor: No
+Can I also say eighteen hundred and two?
+Supervisor: No
+Can I also say eighteen hundred and three?
+Supervisor: No
+Can I also say eighteen hundred and four?
+Supervisor: No
+Can I also say eighteen hundred and five?
+Supervisor: No
+Can I also say eighteen hundred and six?
+Supervisor: No
+Can I also say eighteen hundred and seven?
+Supervisor: No
+Can I also say eighteen hundred and eight?
+Supervisor: No
+Can I also say eighteen hundred and nine?
+Supervisor: No
+Can I also say eighteen hundred and ten?
+Supervisor: No
+Can I also say eighteen hundred and eleven?
+Supervisor: No
+Can I also say eighteen hundred and twelve?
+Supervisor: No
+Can I also say eighteen hundred and thirteen?
+Supervisor: No
+Can I also say eighteen hundred and fifteen?
+Supervisor: No
+Can I also say eighteen hundred and fourteen?
+Supervisor: No
+Can I also say eighteen hundred and eighteen?
+Supervisor: No
+Can I also say eighteen hundred and twenty?
+Supervisor: No
+Can I also say eighteen hundred and twenty-one?
+Supervisor: No
+Can I also say eighteen hundred and thirty?
+Supervisor: No
+Can I also say eighteen hundred and thirty-one?
+Supervisor: No
+Can I also say eighteen hundred and forty?
+Supervisor: No
+Can I also say eighteen hundred and forty-one?
+Supervisor: No
+Can I also say eighteen hundred and fifty?
+Supervisor: No
+Can I also say eighteen hundred and fifty-one?
+Supervisor: No
+Can I also say eighteen hundred and sixty?
+Supervisor: No
+Can I also say eighteen hundred and sixty-one?
+Supervisor: No
+Can I also say eighteen hundred and eighty?
+Supervisor: No
+Can I also say eighteen hundred and eighty-one?
+Supervisor: No
+Can I also say twenty hundred and one?
+Supervisor: No
+Can I also say twenty hundred and two?
+Supervisor: No
+Can I also say twenty hundred and three?
+Supervisor: No
+Can I also say twenty hundred and four?
+Supervisor: No
+Can I also say twenty hundred and five?
+Supervisor: No
+Can I also say twenty hundred and six?
+Supervisor: No
+Can I also say twenty hundred and seven?
+Supervisor: No
+Can I also say twenty hundred and eight?
+Supervisor: No
+Can I also say twenty hundred and nine?
+Supervisor: No
+Can I also say twenty hundred and ten?
+Supervisor: No
+Can I also say twenty hundred and eleven?
+Supervisor: No
+Can I also say twenty hundred and twelve?
+Supervisor: No
+Can I also say twenty hundred and thirteen?
+Supervisor: No
+Can I also say twenty hundred and fifteen?
+Supervisor: No
+Can I also say twenty hundred and fourteen?
+Supervisor: No
+Can I also say twenty hundred and eighteen?
+Supervisor: No
+Can I also say twenty hundred and twenty?
+Supervisor: No
+Can I also say twenty hundred and twenty-one?
+Supervisor: No
+Can I also say twenty hundred and thirty?
+Supervisor: No
+Can I also say twenty hundred and thirty-one?
+Supervisor: No
+Can I also say twenty hundred and forty?
+Supervisor: No
+Can I also say twenty hundred and forty-one?
+Supervisor: No
+Can I also say twenty hundred and fifty?
+Supervisor: No
+Can I also say twenty hundred and fifty-one?
+Supervisor: No
+Can I also say twenty hundred and sixty?
+Supervisor: No
+Can I also say twenty hundred and sixty-one?
+Supervisor: No
+Can I also say twenty hundred and eighty?
+Supervisor: No
+Can I also say twenty hundred and eighty-one?
+Supervisor: No
+Can I also say twenty-one hundred and one?
+Supervisor: No
+Can I also say twenty-one hundred and two?
+Supervisor: No
+Can I also say twenty-one hundred and three?
+Supervisor: No
+Can I also say twenty-one hundred and four?
+Supervisor: No
+Can I also say twenty-one hundred and five?
+Supervisor: No
+Can I also say twenty-one hundred and six?
+Supervisor: No
+Can I also say twenty-one hundred and seven?
+Supervisor: No
+Can I also say twenty-one hundred and eight?
+Supervisor: No
+Can I also say twenty-one hundred and nine?
+Supervisor: No
+Can I also say twenty-one hundred and ten?
+Supervisor: No
+Can I also say twenty-one hundred and eleven?
+Supervisor: No
+Can I also say twenty-one hundred and twelve?
+Supervisor: No
+Can I also say twenty-one hundred and thirteen?
+Supervisor: No
+Can I also say twenty-one hundred and fifteen?
+Supervisor: No
+Can I also say twenty-one hundred and fourteen?
+Supervisor: No
+Can I also say twenty-one hundred and eighteen?
+Supervisor: No
+Can I also say twenty-one hundred and twenty?
+Supervisor: No
+Can I also say twenty-one hundred and twenty-one?
+Supervisor: No
+Can I also say twenty-one hundred and thirty?
+Supervisor: No
+Can I also say twenty-one hundred and thirty-one?
+Supervisor: No
+Can I also say twenty-one hundred and forty?
+Supervisor: No
+Can I also say twenty-one hundred and forty-one?
+Supervisor: No
+Can I also say twenty-one hundred and fifty?
+Supervisor: No
+Can I also say twenty-one hundred and fifty-one?
+Supervisor: No
+Can I also say twenty-one hundred and sixty?
+Supervisor: No
+Can I also say twenty-one hundred and sixty-one?
+Supervisor: No
+Can I also say twenty-one hundred and eighty?
+Supervisor: No
+Can I also say twenty-one hundred and eighty-one?
+Supervisor: No
+Can I also say thirty hundred and one?
+Supervisor: No
+Can I also say thirty hundred and two?
+Supervisor: No
+Can I also say thirty hundred and three?
+Supervisor: No
+Can I also say thirty hundred and four?
+Supervisor: No
+Can I also say thirty hundred and five?
+Supervisor: No
+Can I also say thirty hundred and six?
+Supervisor: No
+Can I also say thirty hundred and seven?
+Supervisor: No
+Can I also say thirty hundred and eight?
+Supervisor: No
+Can I also say thirty hundred and nine?
+Supervisor: No
+Can I also say thirty hundred and ten?
+Supervisor: No
+Can I also say thirty hundred and eleven?
+Supervisor: No
+Can I also say thirty hundred and twelve?
+Supervisor: No
+Can I also say thirty hundred and thirteen?
+Supervisor: No
+Can I also say thirty hundred and fifteen?
+Supervisor: No
+Can I also say thirty hundred and fourteen?
+Supervisor: No
+Can I also say thirty hundred and eighteen?
+Supervisor: No
+Can I also say thirty hundred and twenty?
+Supervisor: No
+Can I also say thirty hundred and twenty-one?
+Supervisor: No
+Can I also say thirty hundred and thirty?
+Supervisor: No
+Can I also say thirty hundred and thirty-one?
+Supervisor: No
+Can I also say thirty hundred and forty?
+Supervisor: No
+Can I also say thirty hundred and forty-one?
+Supervisor: No
+Can I also say thirty hundred and fifty?
+Supervisor: No
+Can I also say thirty hundred and fifty-one?
+Supervisor: No
+Can I also say thirty hundred and sixty?
+Supervisor: No
+Can I also say thirty hundred and sixty-one?
+Supervisor: No
+Can I also say thirty hundred and eighty?
+Supervisor: No
+Can I also say thirty hundred and eighty-one?
+Supervisor: No
+Can I also say thirty-one hundred and one?
+Supervisor: No
+Can I also say thirty-one hundred and two?
+Supervisor: No
+Can I also say thirty-one hundred and three?
+Supervisor: No
+Can I also say thirty-one hundred and four?
+Supervisor: No
+Can I also say thirty-one hundred and five?
+Supervisor: No
+Can I also say thirty-one hundred and six?
+Supervisor: No
+Can I also say thirty-one hundred and seven?
+Supervisor: No
+Can I also say thirty-one hundred and eight?
+Supervisor: No
+Can I also say thirty-one hundred and nine?
+Supervisor: No
+Can I also say thirty-one hundred and ten?
+Supervisor: No
+Can I also say thirty-one hundred and eleven?
+Supervisor: No
+Can I also say thirty-one hundred and twelve?
+Supervisor: No
+Can I also say thirty-one hundred and thirteen?
+Supervisor: No
+Can I also say thirty-one hundred and fifteen?
+Supervisor: No
+Can I also say thirty-one hundred and fourteen?
+Supervisor: No
+Can I also say thirty-one hundred and eighteen?
+Supervisor: No
+Can I also say thirty-one hundred and twenty?
+Supervisor: No
+Can I also say thirty-one hundred and twenty-one?
+Supervisor: No
+Can I also say thirty-one hundred and thirty?
+Supervisor: No
+Can I also say thirty-one hundred and thirty-one?
+Supervisor: No
+Can I also say thirty-one hundred and forty?
+Supervisor: No
+Can I also say thirty-one hundred and forty-one?
+Supervisor: No
+Can I also say thirty-one hundred and fifty?
+Supervisor: No
+Can I also say thirty-one hundred and fifty-one?
+Supervisor: No
+Can I also say thirty-one hundred and sixty?
+Supervisor: No
+Can I also say thirty-one hundred and sixty-one?
+Supervisor: No
+Can I also say thirty-one hundred and eighty?
+Supervisor: No
+
+Can I also say thirty-one hundred and eighty-one?
+Supervisor: No
+Can I also say forty hundred and one?
+Supervisor: No
+Can I also say forty hundred and two?
+Supervisor: No
+Can I also say forty hundred and three?
+Supervisor: No
+Can I also say forty hundred and four?
+Supervisor: No
+Can I also say forty hundred and five?
+Supervisor: No
+Can I also say forty hundred and six?
+Supervisor: No
+Can I also say forty hundred and seven?
+Supervisor: No
+Can I also say forty hundred and eight?
+Supervisor: No
+Can I also say forty hundred and nine?
+Supervisor: No
+Can I also say forty hundred and ten?
+Supervisor: No
+Can I also say forty hundred and eleven?
+Supervisor: No
+Can I also say forty hundred and twelve?
+Supervisor: No
+Can I also say forty hundred and thirteen?
+Supervisor: No
+Can I also say forty hundred and fifteen?
+Supervisor: No
+Can I also say forty hundred and fourteen?
+Supervisor: No
+Can I also say forty hundred and eighteen?
+Supervisor: No
+Can I also say forty hundred and twenty?
+Supervisor: No
+Can I also say forty hundred and twenty-one?
+Supervisor: No
+Can I also say forty hundred and thirty?
+Supervisor: No
+Can I also say forty hundred and thirty-one?
+Supervisor: No
+Can I also say forty hundred and forty?
+Supervisor: No
+Can I also say forty hundred and forty-one?
+Supervisor: No
+Can I also say forty hundred and fifty?
+Supervisor: No
+Can I also say forty hundred and fifty-one?
+Supervisor: No
+Can I also say forty hundred and sixty?
+Supervisor: No
+Can I also say forty hundred and sixty-one?
+Supervisor: No
+Can I also say forty hundred and eighty?
+Supervisor: No
+Can I also say forty hundred and eighty-one?
+Supervisor: No
+Can I also say forty-one hundred and one?
+Supervisor: No
+Can I also say forty-one hundred and two?
+Supervisor: No
+Can I also say forty-one hundred and three?
+Supervisor: No
+Can I also say forty-one hundred and four?
+Supervisor: No
+Can I also say forty-one hundred and five?
+Supervisor: No
+Can I also say forty-one hundred and six?
+Supervisor: No
+Can I also say forty-one hundred and seven?
+Supervisor: No
+Can I also say forty-one hundred and eight?
+Supervisor: No
+Can I also say forty-one hundred and nine?
+Supervisor: No
+Can I also say forty-one hundred and ten?
+Supervisor: No
+Can I also say forty-one hundred and eleven?
+Supervisor: No
+Can I also say forty-one hundred and twelve?
+Supervisor: No
+Can I also say forty-one hundred and thirteen?
+Supervisor: No
+Can I also say forty-one hundred and fifteen?
+Supervisor: No
+Can I also say forty-one hundred and fourteen?
+Supervisor: No
+Can I also say forty-one hundred and eighteen?
+Supervisor: No
+Can I also say forty-one hundred and twenty?
+Supervisor: No
+Can I also say forty-one hundred and twenty-one?
+Supervisor: No
+Can I also say forty-one hundred and thirty?
+Supervisor: No
+Can I also say forty-one hundred and thirty-one?
+Supervisor: No
+Can I also say forty-one hundred and forty?
+Supervisor: No
+Can I also say forty-one hundred and forty-one?
+Supervisor: No
+Can I also say forty-one hundred and fifty?
+Supervisor: No
+Can I also say forty-one hundred and fifty-one?
+Supervisor: No
+Can I also say forty-one hundred and sixty?
+Supervisor: No
+Can I also say forty-one hundred and sixty-one?
+Supervisor: No
+Can I also say forty-one hundred and eighty?
+Supervisor: No
+Can I also say forty-one hundred and eighty-one?
+Supervisor: No
+Can I also say fifty hundred and one?
+Supervisor: No
+Can I also say fifty hundred and two?
+Supervisor: No
+Can I also say fifty hundred and three?
+Supervisor: No
+Can I also say fifty hundred and four?
+Supervisor: No
+Can I also say fifty hundred and five?
+Supervisor: No
+Can I also say fifty hundred and six?
+Supervisor: No
+Can I also say fifty hundred and seven?
+Supervisor: No
+Can I also say fifty hundred and eight?
+Supervisor: No
+Can I also say fifty hundred and nine?
+Supervisor: No
+Can I also say fifty hundred and ten?
+Supervisor: No
+Can I also say fifty hundred and eleven?
+Supervisor: No
+Can I also say fifty hundred and twelve?
+Supervisor: No
+Can I also say fifty hundred and thirteen?
+Supervisor: No
+Can I also say fifty hundred and fifteen?
+Supervisor: No
+Can I also say fifty hundred and fourteen?
+Supervisor: No
+Can I also say fifty hundred and eighteen?
+Supervisor: No
+Can I also say fifty hundred and twenty?
+Supervisor: No
+Can I also say fifty hundred and twenty-one?
+Supervisor: No
+Can I also say fifty hundred and thirty?
+Supervisor: No
+Can I also say fifty hundred and thirty-one?
+Supervisor: No
+Can I also say fifty hundred and forty?
+Supervisor: No
+Can I also say fifty hundred and forty-one?
+Supervisor: No
+Can I also say fifty hundred and fifty?
+Supervisor: No
+Can I also say fifty hundred and fifty-one?
+Supervisor: No
+Can I also say fifty hundred and sixty?
+Supervisor: No
+Can I also say fifty hundred and sixty-one?
+Supervisor: No
+Can I also say fifty hundred and eighty?
+Supervisor: No
+Can I also say fifty hundred and eighty-one?
+Supervisor: No
+Can I also say fifty-one hundred and one?
+Supervisor: No
+Can I also say fifty-one hundred and two?
+Supervisor: No
+Can I also say fifty-one hundred and three?
+Supervisor: No
+Can I also say fifty-one hundred and four?
+Supervisor: No
+Can I also say fifty-one hundred and five?
+Supervisor: No
+Can I also say fifty-one hundred and six?
+Supervisor: No
+Can I also say fifty-one hundred and seven?
+Supervisor: No
+Can I also say fifty-one hundred and eight?
+Supervisor: No
+Can I also say fifty-one hundred and nine?
+Supervisor: No
+Can I also say fifty-one hundred and ten?
+Supervisor: No
+Can I also say fifty-one hundred and eleven?
+Supervisor: No
+Can I also say fifty-one hundred and twelve?
+Supervisor: No
+Can I also say fifty-one hundred and thirteen?
+Supervisor: No
+Can I also say fifty-one hundred and fifteen?
+Supervisor: No
+Can I also say fifty-one hundred and fourteen?
+Supervisor: No
+Can I also say fifty-one hundred and eighteen?
+Supervisor: No
+Can I also say fifty-one hundred and twenty?
+Supervisor: No
+Can I also say fifty-one hundred and twenty-one?
+Supervisor: No
+Can I also say fifty-one hundred and thirty?
+Supervisor: No
+Can I also say fifty-one hundred and thirty-one?
+Supervisor: No
+Can I also say fifty-one hundred and forty?
+Supervisor: No
+Can I also say fifty-one hundred and forty-one?
+Supervisor: No
+Can I also say fifty-one hundred and fifty?
+Supervisor: No
+Can I also say fifty-one hundred and fifty-one?
+Supervisor: No
+Can I also say fifty-one hundred and sixty?
+Supervisor: No
+Can I also say fifty-one hundred and sixty-one?
+Supervisor: No
+Can I also say fifty-one hundred and eighty?
+Supervisor: No
+Can I also say fifty-one hundred and eighty-one?
+Supervisor: No
+Can I also say sixty hundred and one?
+Supervisor: No
+Can I also say sixty hundred and two?
+Supervisor: No
+Can I also say sixty hundred and three?
+Supervisor: No
+Can I also say sixty hundred and four?
+Supervisor: No
+Can I also say sixty hundred and five?
+Supervisor: No
+Can I also say sixty hundred and six?
+Supervisor: No
+Can I also say sixty hundred and seven?
+Supervisor: No
+Can I also say sixty hundred and eight?
+Supervisor: No
+Can I also say sixty hundred and nine?
+Supervisor: No
+Can I also say sixty hundred and ten?
+Supervisor: No
+Can I also say sixty hundred and eleven?
+Supervisor: No
+Can I also say sixty hundred and twelve?
+Supervisor: No
+Can I also say sixty hundred and thirteen?
+Supervisor: No
+Can I also say sixty hundred and fifteen?
+Supervisor: No
+Can I also say sixty hundred and fourteen?
+Supervisor: No
+Can I also say sixty hundred and eighteen?
+Supervisor: No
+Can I also say sixty hundred and twenty?
+Supervisor: No
+Can I also say sixty hundred and twenty-one?
+Supervisor: No
+Can I also say sixty hundred and thirty?
+Supervisor: No
+Can I also say sixty hundred and thirty-one?
+Supervisor: No
+Can I also say sixty hundred and forty?
+Supervisor: No
+Can I also say sixty hundred and forty-one?
+Supervisor: No
+Can I also say sixty hundred and fifty?
+Supervisor: No
+Can I also say sixty hundred and fifty-one?
+Supervisor: No
+Can I also say sixty hundred and sixty?
+Supervisor: No
+Can I also say sixty hundred and sixty-one?
+Supervisor: No
+Can I also say sixty hundred and eighty?
+Supervisor: No
+Can I also say sixty hundred and eighty-one?
+Supervisor: No
+Can I also say sixty-one hundred and one?
+Supervisor: No
+Can I also say sixty-one hundred and two?
+Supervisor: No
+Can I also say sixty-one hundred and three?
+Supervisor: No
+Can I also say sixty-one hundred and four?
+Supervisor: No
+Can I also say sixty-one hundred and five?
+Supervisor: No
+Can I also say sixty-one hundred and six?
+Supervisor: No
+Can I also say sixty-one hundred and seven?
+Supervisor: No
+Can I also say sixty-one hundred and eight?
+Supervisor: No
+Can I also say sixty-one hundred and nine?
+Supervisor: No
+Can I also say sixty-one hundred and ten?
+Supervisor: No
+Can I also say sixty-one hundred and eleven?
+Supervisor: No
+Can I also say sixty-one hundred and twelve?
+Supervisor: No
+Can I also say sixty-one hundred and thirteen?
+Supervisor: No
+Can I also say sixty-one hundred and fifteen?
+Supervisor: No
+Can I also say sixty-one hundred and fourteen?
+Supervisor: No
+Can I also say sixty-one hundred and eighteen?
+Supervisor: No
+Can I also say sixty-one hundred and twenty?
+Supervisor: No
+Can I also say sixty-one hundred and twenty-one?
+Supervisor: No
+Can I also say sixty-one hundred and thirty?
+Supervisor: No
+Can I also say sixty-one hundred and thirty-one?
+Supervisor: No
+Can I also say sixty-one hundred and forty?
+Supervisor: No
+Can I also say sixty-one hundred and forty-one?
+Supervisor: No
+Can I also say sixty-one hundred and fifty?
+Supervisor: No
+Can I also say sixty-one hundred and fifty-one?
+Supervisor: No
+Can I also say sixty-one hundred and sixty?
+Supervisor: No
+Can I also say sixty-one hundred and sixty-one?
+Supervisor: No
+Can I also say sixty-one hundred and eighty?
+Supervisor: No
+
+Can I also say sixty-one hundred and eighty-one?
+Supervisor: No
+Can I also say eighty hundred and one?
+Supervisor: No
+Can I also say eighty hundred and two?
+Supervisor: No
+Can I also say eighty hundred and three?
+Supervisor: No
+Can I also say eighty hundred and four?
+Supervisor: No
+Can I also say eighty hundred and five?
+Supervisor: No
+Can I also say eighty hundred and six?
+Supervisor: No
+Can I also say eighty hundred and seven?
+Supervisor: No
+Can I also say eighty hundred and eight?
+Supervisor: No
+Can I also say eighty hundred and nine?
+Supervisor: No
+Can I also say eighty hundred and ten?
+Supervisor: No
+Can I also say eighty hundred and eleven?
+Supervisor: No
+Can I also say eighty hundred and twelve?
+Supervisor: No
+Can I also say eighty hundred and thirteen?
+Supervisor: No
+Can I also say eighty hundred and fifteen?
+Supervisor: No
+Can I also say eighty hundred and fourteen?
+Supervisor: No
+Can I also say eighty hundred and eighteen?
+Supervisor: No
+Can I also say eighty hundred and twenty?
+Supervisor: No
+Can I also say eighty hundred and twenty-one?
+Supervisor: No
+Can I also say eighty hundred and thirty?
+Supervisor: No
+Can I also say eighty hundred and thirty-one?
+Supervisor: No
+Can I also say eighty hundred and forty?
+Supervisor: No
+Can I also say eighty hundred and forty-one?
+Supervisor: No
+Can I also say eighty hundred and fifty?
+Supervisor: No
+Can I also say eighty hundred and fifty-one?
+Supervisor: No
+Can I also say eighty hundred and sixty?
+Supervisor: No
+Can I also say eighty hundred and sixty-one?
+Supervisor: No
+Can I also say eighty hundred and eighty?
+Supervisor: No
+Can I also say eighty hundred and eighty-one?
+Supervisor: No
+Can I also say eighty-one hundred and one?
+Supervisor: No
+Can I also say eighty-one hundred and two?
+Supervisor: No
+Can I also say eighty-one hundred and three?
+Supervisor: No
+Can I also say eighty-one hundred and four?
+Supervisor: No
+Can I also say eighty-one hundred and five?
+Supervisor: No
+Can I also say eighty-one hundred and six?
+Supervisor: No
+Can I also say eighty-one hundred and seven?
+Supervisor: No
+Can I also say eighty-one hundred and eight?
+Supervisor: No
+Can I also say eighty-one hundred and nine?
+Supervisor: No
+Can I also say eighty-one hundred and ten?
+Supervisor: No
+Can I also say eighty-one hundred and eleven?
+Supervisor: No
+Can I also say eighty-one hundred and twelve?
+Supervisor: No
+Can I also say eighty-one hundred and thirteen?
+Supervisor: No
+Can I also say eighty-one hundred and fifteen?
+Supervisor: No
+Can I also say eighty-one hundred and fourteen?
+Supervisor: No
+Can I also say eighty-one hundred and eighteen?
+Supervisor: No
+Can I also say eighty-one hundred and twenty?
+Supervisor: No
+Can I also say eighty-one hundred and twenty-one?
+Supervisor: No
+Can I also say eighty-one hundred and thirty?
+Supervisor: No
+Can I also say eighty-one hundred and thirty-one?
+Supervisor: No
+Can I also say eighty-one hundred and forty?
+Supervisor: No
+Can I also say eighty-one hundred and forty-one?
+Supervisor: No
+Can I also say eighty-one hundred and fifty?
+Supervisor: No
+Can I also say eighty-one hundred and fifty-one?
+Supervisor: No
+Can I also say eighty-one hundred and sixty?
+Supervisor: No
+Can I also say eighty-one hundred and sixty-one?
+Supervisor: No
+Can I also say eighty-one hundred and eighty?
+Supervisor: No
+Can I also say eighty-one hundred and eighty-one?
+Supervisor: No
+Function _ hundred and _ maps {1,2,3,4,5,6,7,8,9}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
+one is 1
+two is 2
+three is 3
+four is 4
+five is 5
+six is 6
+seven is 7
+eight is 8
+nine is 9
+ten is 10
+eleven is 11
+twelve is 12
+thirteen is 13
+fifteen is 15
+Function _teen maps {4,6,7,9} by x -> 1*x+10
+Function _een maps {8} by x -> 0*x+18
+twenty is 20
+Function twenty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+20
+thirty is 30
+Function thirty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+30
+forty is 40
+Function forty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+40
+fifty is 50
+Function fifty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+50
+Function _ty maps {6,7,9} by x -> 10*x+0
+Function _ty-_ maps {6,7,9}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
+Function _y maps {8} by x -> 0*x+80
+Function _y-_ maps {8}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
+Function _ hundred maps {1,2,3,4,5,6,7,8,9} by x -> 100*x+0
+Function _ hundred and _ maps {1,2,3,4,5,6,7,8,9}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
+Learned 999 words in English and structured them in 30 functions.
+It took 42 samples to learn those.
+Those are:
+one is 1
+two is 2
+three is 3
+four is 4
+five is 5
+six is 6
+seven is 7
+eight is 8
+nine is 9
+ten is 10
+eleven is 11
+twelve is 12
+thirteen is 13
+fifteen is 15
+Function _teen maps {4,6,7,9} by x -> 1*x+10
+Function _een maps {8} by x -> 0*x+18
+twenty is 20
+Function twenty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+20
+thirty is 30
+Function thirty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+30
+forty is 40
+Function forty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+40
+fifty is 50
+Function fifty-_ maps {1,2,3,4,5,6,7,8,9} by x -> 1*x+50
+Function _ty maps {6,7,9} by x -> 10*x+0
+Function _ty-_ maps {6,7,9}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
+Function _y maps {8} by x -> 0*x+80
+Function _y-_ maps {8}x{1,2,3,4,5,6,7,8,9} by (x0,x1) -> 10*x0+1*x1
+Function _ hundred maps {1,2,3,4,5,6,7,8,9} by x -> 100*x+0
+Function _ hundred and _ maps {1,2,3,4,5,6,7,8,9}x{1,2,3,4,5,6,7,8,9,10,11,12,13,15,_teen,_een,20,twenty-_,30,thirty-_,40,forty-_,50,fifty-_,_ty,_ty-_,_y,_y-_} by (x0,x1) -> 100*x0+1*x1
+
