@@ -428,7 +428,7 @@ def create_lexicon(language):
         return LEX
     except:
         try:
-            lanu=pd.read_csv(r'C:\Users\ikm\OneDrive\Desktop\NumeralParsingPerformance\Languages&NumbersData\Numeral.csv', encoding = "utf_16", sep = '\t')
+            lanu=pd.read_csv(FILE_PATH_OF_LANGUAGESANDNUMBERS_DATA_CSV, encoding = "utf_16", sep = '\t')
             df=lanu[lanu['Language']==language]
             biscriptual=False
             if ' ' in df.iloc[0,2]:
