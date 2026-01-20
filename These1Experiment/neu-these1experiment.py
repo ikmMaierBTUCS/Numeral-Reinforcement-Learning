@@ -345,7 +345,7 @@ class SCFunction:
         # Finde b_1,...,b_l
         other_benotigte_vektoren = neue_dimension - len(affine_basis)
         for other_vektoren in itertools.combinations(other_mergee_inputvectors, other_benotigte_vektoren):
-            neue_affine_basis = np.array(affine_basis + [[m.mapping[-1] for m in mergee_inputvector] + [1]] + [[[m.mapping[-1] for m in other_inputvector] for other_inputvector in other_vektoren], dtype=float) # prüfe affin lineare unabhängigkeit
+            neue_affine_basis = np.array(affine_basis + [[m.mapping[-1] for m in mergee_inputvector] + [1]] + [[m.mapping[-1] for m in other_inputvector] + [1] for other_inputvector in other_vektoren], dtype=float) # prüfe affin lineare unabhängigkeit
             y = []
             if np.linalg.matrix_rank(neue_affine_basis,tol=1e-7) == neue_dimension:
                 
