@@ -1,0 +1,404 @@
+Language;Number;Numeral
+Yoruba;1;o.kan
+Yoruba;2; eji
+Yoruba;3; e.ta
+Yoruba;4; e.rin
+Yoruba;5; arun
+Yoruba;6; e.fa
+Yoruba;7; eje
+Yoruba;8; e.jo.
+Yoruba;9; e.san
+Yoruba;10; e.wa
+Yoruba;11; o.kan l-e.wa
+Yoruba;12; eji l-e.wa
+Yoruba;13; e.ta l-e.wa
+Yoruba;14; e.rin l-e.wa
+Yoruba;15; arun din ogun
+Yoruba;16; e.rin din ogun
+Yoruba;17; e.ta din ogun
+Yoruba;18; eji din ogun
+Yoruba;19; o.kan din ogun
+Yoruba;20; ogun
+Yoruba;21; o.kan l-ogun
+Yoruba;22; eji l-ogun
+Yoruba;23; e.ta l-ogun
+Yoruba;24; e.rin l-ogun
+Yoruba;25; arun din e.wa dinogun eji
+Yoruba;26; e.rin din e.wa dinogun eji
+Yoruba;27; e.ta din e.wa dinogun eji
+Yoruba;28; eji din e.wa dinogun eji
+Yoruba;29; o.kan din e.wa dinogun eji
+Yoruba;30; e.wa dinogun eji
+Yoruba;31; o.kan l-e.wa dinogun eji
+Yoruba;32; eji l-e.wa dinogun eji
+Yoruba;33; e.ta l-e.wa dinogun eji
+Yoruba;34; e.rin l-e.wa dinogun eji
+Yoruba;35; arun din ogun eji
+Yoruba;36; e.rin din ogun eji
+Yoruba;37; e.ta din ogun eji
+Yoruba;38; eji din ogun eji
+Yoruba;39; o.kan din ogun eji
+Yoruba;40; ogun eji
+Yoruba;41; o.kan l-ogun eji
+Yoruba;42; eji l-ogun eji
+Yoruba;43; e.ta l-ogun eji
+Yoruba;44; e.rin l-ogun eji
+Yoruba;45; arun din e.wa dinogun e.ta
+Yoruba;46; e.rin din e.wa dinogun e.ta
+Yoruba;47; e.ta din e.wa dinogun e.ta
+Yoruba;48; eji din e.wa dinogun e.ta
+Yoruba;49; o.kan din e.wa dinogun e.ta
+Yoruba;50; e.wa dinogun e.ta
+Yoruba;51; o.kan l-e.wa dinogun e.ta
+Yoruba;52; eji l-e.wa dinogun e.ta
+Yoruba;53; e.ta l-e.wa dinogun e.ta
+Yoruba;54; e.rin l-e.wa dinogun e.ta
+Yoruba;55; arun din ogun e.ta
+Yoruba;56; e.rin din ogun e.ta
+Yoruba;57; e.ta din ogun e.ta
+Yoruba;58; eji din ogun e.ta
+Yoruba;59; o.kan din ogun e.ta
+Yoruba;60; ogun e.ta
+Yoruba;61; o.kan l-ogun e.ta
+Yoruba;62; eji l-ogun e.ta
+Yoruba;63; e.ta l-ogun e.ta
+Yoruba;64; e.rin l-ogun e.ta
+Yoruba;65; arun din e.wa dinogun e.rin
+Yoruba;66; e.rin din e.wa dinogun e.rin
+Yoruba;67; e.ta din e.wa dinogun e.rin
+Yoruba;68; eji din e.wa dinogun e.rin
+Yoruba;69; o.kan din e.wa dinogun e.rin
+Yoruba;70; e.wa dinogun e.rin
+Yoruba;71; o.kan l-e.wa dinogun e.rin
+Yoruba;72; eji l-e.wa dinogun e.rin
+Yoruba;73; e.ta l-e.wa dinogun e.rin
+Yoruba;74; e.rin l-e.wa dinogun e.rin
+Yoruba;75; arun din ogun e.rin
+Yoruba;76; e.rin din ogun e.rin
+Yoruba;77; e.ta din ogun e.rin
+Yoruba;78; eji din ogun e.rin
+Yoruba;79; o.kan din ogun e.rin
+Yoruba;80; ogun e.rin
+Yoruba;81; o.kan l-ogun e.rin
+Yoruba;82; eji l-ogun e.rin
+Yoruba;83; e.ta l-ogun e.rin
+Yoruba;84; e.rin l-ogun e.rin
+Yoruba;85; arun din e.wa dinogun arun
+Yoruba;86; e.rin din e.wa dinogun arun
+Yoruba;87; e.ta din e.wa dinogun arun
+Yoruba;88; eji din e.wa dinogun arun
+Yoruba;89; o.kan din e.wa dinogun arun
+Yoruba;90; e.wa dinogun arun
+Yoruba;91; o.kan l-e.wa dinogun arun
+Yoruba;92; eji l-e.wa dinogun arun
+Yoruba;93; e.ta l-e.wa dinogun arun
+Yoruba;94; e.rin l-e.wa dinogun arun
+Yoruba;95; arun din ogun arun
+Yoruba;96; e.rin din ogun arun
+Yoruba;97; e.ta din ogun arun
+Yoruba;98; eji din ogun arun
+Yoruba;99; o.kan din ogun arun
+Yoruba;100; ogun arun
+Yoruba;101; o.kan l-ogun arun
+Yoruba;102; eji l-ogun arun
+Yoruba;103; e.ta l-ogun arun
+Yoruba;104; e.rin l-ogun arun
+Yoruba;105; arun din e.wa dinogun e.fa
+Yoruba;106; e.rin din e.wa dinogun e.fa
+Yoruba;107; e.ta din e.wa dinogun e.fa
+Yoruba;108; eji din e.wa dinogun e.fa
+Yoruba;109; o.kan din e.wa dinogun e.fa
+Yoruba;110; e.wa dinogun e.fa
+Yoruba;111; o.kan l-e.wa dinogun e.fa
+Yoruba;112; eji l-e.wa dinogun e.fa
+Yoruba;113; e.ta l-e.wa dinogun e.fa
+Yoruba;114; e.rin l-e.wa dinogun e.fa
+Yoruba;115; arun din ogun e.fa
+Yoruba;116; e.rin din ogun e.fa
+Yoruba;117; e.ta din ogun e.fa
+Yoruba;118; eji din ogun e.fa
+Yoruba;119; o.kan din ogun e.fa
+Yoruba;120; ogun e.fa
+Yoruba;121; o.kan l-ogun e.fa
+Yoruba;122; eji l-ogun e.fa
+Yoruba;123; e.ta l-ogun e.fa
+Yoruba;124; e.rin l-ogun e.fa
+Yoruba;125; arun din e.wa dinogun eje
+Yoruba;126; e.rin din e.wa dinogun eje
+Yoruba;127; e.ta din e.wa dinogun eje
+Yoruba;128; eji din e.wa dinogun eje
+Yoruba;129; o.kan din e.wa dinogun eje
+Yoruba;130; e.wa dinogun eje
+Yoruba;131; o.kan l-e.wa dinogun eje
+Yoruba;132; eji l-e.wa dinogun eje
+Yoruba;133; e.ta l-e.wa dinogun eje
+Yoruba;134; e.rin l-e.wa dinogun eje
+Yoruba;135; arun din ogun eje
+Yoruba;136; e.rin din ogun eje
+Yoruba;137; e.ta din ogun eje
+Yoruba;138; eji din ogun eje
+Yoruba;139; o.kan din ogun eje
+Yoruba;140; ogun eje
+Yoruba;141; o.kan l-ogun eje
+Yoruba;142; eji l-ogun eje
+Yoruba;143; e.ta l-ogun eje
+Yoruba;144; e.rin l-ogun eje
+Yoruba;145; arun din e.wa dinogun e.jo.
+Yoruba;146; e.rin din e.wa dinogun e.jo.
+Yoruba;147; e.ta din e.wa dinogun e.jo.
+Yoruba;148; eji din e.wa dinogun e.jo.
+Yoruba;149; o.kan din e.wa dinogun e.jo.
+Yoruba;150; e.wa dinogun e.jo.
+Yoruba;151; o.kan l-e.wa dinogun e.jo.
+Yoruba;152; eji l-e.wa dinogun e.jo.
+Yoruba;153; e.ta l-e.wa dinogun e.jo.
+Yoruba;154; e.rin l-e.wa dinogun e.jo.
+Yoruba;155; arun din ogun e.jo.
+Yoruba;156; e.rin din ogun e.jo.
+Yoruba;157; e.ta din ogun e.jo.
+Yoruba;158; eji din ogun e.jo.
+Yoruba;159; o.kan din ogun e.jo.
+Yoruba;160; ogun e.jo.
+Yoruba;161; o.kan l-ogun e.jo.
+Yoruba;162; eji l-ogun e.jo.
+Yoruba;163; e.ta l-ogun e.jo.
+Yoruba;164; e.rin l-ogun e.jo.
+Yoruba;165; arun din e.wa dinogun e.san
+Yoruba;166; e.rin din e.wa dinogun e.san
+Yoruba;167; e.ta din e.wa dinogun e.san
+Yoruba;168; eji din e.wa dinogun e.san
+Yoruba;169; o.kan din e.wa dinogun e.san
+Yoruba;170; e.wa dinogun e.san
+Yoruba;171; o.kan l-e.wa dinogun e.san
+Yoruba;172; eji l-e.wa dinogun e.san
+Yoruba;173; e.ta l-e.wa dinogun e.san
+Yoruba;174; e.rin l-e.wa dinogun e.san
+Yoruba;175; arun din ogun e.san
+Yoruba;176; e.rin din ogun e.san
+Yoruba;177; e.ta din ogun e.san
+Yoruba;178; eji din ogun e.san
+Yoruba;179; o.kan din ogun e.san
+Yoruba;180; ogun e.san
+Yoruba;181; o.kan l-ogun e.san
+Yoruba;182; eji l-ogun e.san
+Yoruba;183; e.ta l-ogun e.san
+Yoruba;184; e.rin l-ogun e.san
+BulgarianDV;1; edno
+BulgarianDV;2; dve
+BulgarianDV;3; tri
+BulgarianDV;4; chetiri
+BulgarianDV;5; pet
+BulgarianDV;6; shest
+BulgarianDV;7; sedem
+BulgarianDV;8; osem
+BulgarianDV;9; devet
+BulgarianDV;10; deset
+BulgarianDV;11; edinadeset
+BulgarianDV;12; dvanadeset
+BulgarianDV;13; trinadeset
+BulgarianDV;14; chetirinadeset
+BulgarianDV;15; petnadeset
+BulgarianDV;16; shestnadeset
+BulgarianDV;17; sedemnadeset
+BulgarianDV;18; osemnadeset
+BulgarianDV;19; devetnadeset
+BulgarianDV;20; dvadeset
+BulgarianDV;21; dvadeset i edno
+BulgarianDV;22; dvadeset i dve
+BulgarianDV;23; dvadeset i tri
+BulgarianDV;24; dvadeset i chetiri
+BulgarianDV;25; dvadeset i pet
+BulgarianDV;26; dvadeset i shest
+BulgarianDV;27; dvadeset i sedem
+BulgarianDV;28; dvadeset i osem
+BulgarianDV;29; dvadeset i devet
+BulgarianDV;30; trideset
+BulgarianDV;31; trideset i edno
+BulgarianDV;32; trideset i dve
+BulgarianDV;33; trideset i tri
+BulgarianDV;34; trideset i chetiri
+BulgarianDV;35; trideset i pet
+BulgarianDV;36; trideset i shest
+BulgarianDV;37; trideset i sedem
+BulgarianDV;38; trideset i osem
+BulgarianDV;39; trideset i devet
+BulgarianDV;40; chetirideset
+BulgarianDV;41; chetirideset i edno
+BulgarianDV;42; chetirideset i dve
+BulgarianDV;43; chetirideset i tri
+BulgarianDV;44; chetirideset i chetiri
+BulgarianDV;45; chetirideset i pet
+BulgarianDV;46; chetirideset i shest
+BulgarianDV;47; chetirideset i sedem
+BulgarianDV;48; chetirideset i osem
+BulgarianDV;49; chetirideset i devet
+BulgarianDV;50; petdeset
+BulgarianDV;51; petdeset i edno
+BulgarianDV;52; petdeset i dve
+BulgarianDV;53; petdeset i tri
+BulgarianDV;54; petdeset i chetiri
+BulgarianDV;55; petdeset i pet
+BulgarianDV;56; petdeset i shest
+BulgarianDV;57; petdeset i sedem
+BulgarianDV;58; petdeset i osem
+BulgarianDV;59; petdeset i devet
+BulgarianDV;60; shestdeset
+BulgarianDV;61; shestdeset i edno
+BulgarianDV;62; shestdeset i dve
+BulgarianDV;63; shestdeset i tri
+BulgarianDV;64; shestdeset i chetiri
+BulgarianDV;65; shestdeset i pet
+BulgarianDV;66; shestdeset i shest
+BulgarianDV;67; shestdeset i sedem
+BulgarianDV;68; shestdeset i osem
+BulgarianDV;69; shestdeset i devet
+BulgarianDV;70; sedemdeset
+BulgarianDV;71; sedemdeset i edno
+BulgarianDV;72; sedemdeset i dve
+BulgarianDV;73; sedemdeset i tri
+BulgarianDV;74; sedemdeset i chetiri
+BulgarianDV;75; sedemdeset i pet
+BulgarianDV;76; sedemdeset i shest
+BulgarianDV;77; sedemdeset i sedem
+BulgarianDV;78; sedemdeset i osem
+BulgarianDV;79; sedemdeset i devet
+BulgarianDV;80; osemdeset
+BulgarianDV;81; osemdeset i edno
+BulgarianDV;82; osemdeset i dve
+BulgarianDV;83; osemdeset i tri
+BulgarianDV;84; osemdeset i chetiri
+BulgarianDV;85; osemdeset i pet
+BulgarianDV;86; osemdeset i shest
+BulgarianDV;87; osemdeset i sedem
+BulgarianDV;88; osemdeset i osem
+BulgarianDV;89; osemdeset i devet
+BulgarianDV;90; devetdeset
+BulgarianDV;91; devetdeset i edno
+BulgarianDV;92; devetdeset i dve
+BulgarianDV;93; devetdeset i tri
+BulgarianDV;94; devetdeset i chetiri
+BulgarianDV;95; devetdeset i pet
+BulgarianDV;96; devetdeset i shest
+BulgarianDV;97; devetdeset i sedem
+BulgarianDV;98; devetdeset i osem
+BulgarianDV;99; devetdeset i devet
+Birom;1; gwı̄niŋ
+Birom;2; ba
+Birom;3; tat
+Birom;4; naas
+Birom;5; tuŋūn
+Birom;6; tıı̄min
+Birom;7; taāma
+Birom;8; rwı̄ı̄t
+Birom;9; Sāātat
+Birom;10; Sāāba
+Birom;11; Sāāgwı̄niŋ
+Birom;12; kūrū
+Birom;13; kūrū na gwĒ gwı̄niŋ
+Birom;14; kūrū na vEba
+Birom;15; kūrū na vEtat
+Birom;16; kūrū na vEnaas
+Birom;17; kūrū na vEtuŋūn
+Birom;18; kūrū na vEtıı̄min
+Birom;19; kūrū na vEtaāma
+Birom;20; kūrū na vErwı̄ı̄t
+Birom;21; kūrū na vESāātat
+Birom;22; kūrū na vESāāba
+Birom;23; kūrū na vESāāgwı̄niŋ
+Birom;24; bākūrū bı̄ba
+Birom;25; bākūrū bı̄ba na gwĒ gwı̄niŋ
+Birom;26; bākūrū bı̄ba na vEba
+Birom;27; bākūrū bı̄ba na vEtat
+Birom;28; bākūrū bı̄ba na vEnaas
+Birom;29; bākūrū bı̄ba na vEtuŋūn
+Birom;30; bākūrū bı̄ba na vEtıı̄min
+Birom;31; bākūrū bı̄ba na vEtaāma
+Birom;32; bākūrū bı̄ba na vErwı̄ı̄t
+Birom;33; bākūrū bı̄ba na vESāātat
+Birom;34; bākūrū bı̄ba na vESāāba
+Birom;35; bākūrū bı̄ba na vESāāgwı̄niŋ
+Birom;36; bākūrū bı̄tat
+Birom;37; bākūrū bı̄tat na gwĒ gwı̄niŋ
+Birom;38; bākūrū bı̄tat na vEba
+Birom;39; bākūrū bı̄tat na vEtat
+Birom;40; bākūrū bı̄tat na vEnaas
+Birom;41; bākūrū bı̄tat na vEtuŋūn
+Birom;42; bākūrū bı̄tat na vEtıı̄min
+Birom;43; bākūrū bı̄tat na vEtaāma
+Birom;44; bākūrū bı̄tat na vErwı̄ı̄t
+Birom;45; bākūrū bı̄tat na vESāātat
+Birom;46; bākūrū bı̄tat na vESāāba
+Birom;47; bākūrū bı̄tat na vESāāgwı̄niŋ
+Birom;48; bākūrū bı̄naas
+Birom;49; bākūrū bı̄naas na gwĒ gwı̄niŋ
+Birom;50; bākūrū bı̄naas na vEba
+Birom;51; bākūrū bı̄naas na vEtat
+Birom;52; bākūrū bı̄naas na vEnaas
+Birom;53; bākūrū bı̄naas na vEtuŋūn
+Birom;54; bākūrū bı̄naas na vEtıı̄min
+Birom;55; bākūrū bı̄naas na vEtaāma
+Birom;56; bākūrū bı̄naas na vErwı̄ı̄t
+Birom;57; bākūrū bı̄naas na vESāātat
+Birom;58; bākūrū bı̄naas na vESāāba
+Birom;59; bākūrū bı̄naas na vESāāgwı̄niŋ
+Birom;60; bākūrū bı̄tuŋūn
+Birom;61; bākūrū bı̄tuŋūn na gwĒ gwı̄niŋ
+Birom;62; bākūrū bı̄tuŋūn na vEba
+Birom;63; bākūrū bı̄tuŋūn na vEtat
+Birom;64; bākūrū bı̄tuŋūn na vEnaas
+Birom;65; bākūrū bı̄tuŋūn na vEtuŋūn
+Birom;66; bākūrū bı̄tuŋūn na vEtıı̄min
+Birom;67; bākūrū bı̄tuŋūn na vEtaāma
+Birom;68; bākūrū bı̄tuŋūn na vErwı̄ı̄t
+Birom;69; bākūrū bı̄tuŋūn na vESāātat
+Birom;70; bākūrū bı̄tuŋūn na vESāāba
+Birom;71; bākūrū bı̄tuŋūn na vESāāgwı̄niŋ
+Birom;72; bākūrū bı̄tıı̄min
+Birom;73; bākūrū bı̄tıı̄min na gwĒ gwı̄niŋ
+Birom;74; bākūrū bı̄tıı̄min na vEba
+Birom;75; bākūrū bı̄tıı̄min na vEtat
+Birom;76; bākūrū bı̄tıı̄min na vEnaas
+Birom;77; bākūrū bı̄tıı̄min na vEtuŋūn
+Birom;78; bākūrū bı̄tıı̄min na vEtıı̄min
+Birom;79; bākūrū bı̄tıı̄min na vEtaāma
+Birom;80; bākūrū bı̄tıı̄min na vErwı̄ı̄t
+Birom;81; bākūrū bı̄tıı̄min na vESāātat
+Birom;82; bākūrū bı̄tıı̄min na vESāāba
+Birom;83; bākūrū bı̄tıı̄min na vESāāgwı̄niŋ
+Birom;84; bākūrū bı̄taāma
+Birom;85; bākūrū bı̄taāma na gwĒ gwı̄niŋ
+Birom;86; bākūrū bı̄taāma na vEba
+Birom;87; bākūrū bı̄taāma na vEtat
+Birom;88; bākūrū bı̄taāma na vEnaas
+Birom;89; bākūrū bı̄taāma na vEtuŋūn
+Birom;90; bākūrū bı̄taāma na vEtıı̄min
+Birom;91; bākūrū bı̄taāma na vEtaāma
+Birom;92; bākūrū bı̄taāma na vErwı̄ı̄t
+Birom;93; bākūrū bı̄taāma na vESāātat
+Birom;94; bākūrū bı̄taāma na vESāāba
+Birom;95; bākūrū bı̄taāma na vESāāgwı̄niŋ
+Birom;96; bākūrū bı̄rwı̄ı̄t
+Birom;97; bākūrū bı̄rwı̄ı̄t na gwĒ gwı̄niŋ
+Birom;98; bākūrū bı̄rwı̄ı̄t na vEba
+Birom;99; bākūrū bı̄rwı̄ı̄t na vEtat
+Birom;100; bākūrū bı̄rwı̄ı̄t na vEnaas
+Birom;101; bākūrū bı̄rwı̄ı̄t na vEtuŋūn
+Birom;102; bākūrū bı̄rwı̄ı̄t na vEtıı̄min
+Birom;103; bākūrū bı̄rwı̄ı̄t na vEtaāma
+Birom;104; bākūrū bı̄rwı̄ı̄t na vErwı̄ı̄t
+Birom;105; bākūrū bı̄rwı̄ı̄t na vESāātat
+Birom;106; bākūrū bı̄rwı̄ı̄t na vESāāba
+Birom;107; bākūrū bı̄rwı̄ı̄t na vESāāgwı̄niŋ
+Birom;108; bākūrū Sāābı̄tat
+Birom;109; bākūrū Sāābı̄tat na gwĒ gwı̄niŋ
+Birom;110; bākūrū Sāābı̄tat na vEba
+Birom;111; bākūrū Sāābı̄tat na vEtat
+Birom;112; bākūrū Sāābı̄tat na vEnaas
+Birom;113; bākūrū Sāābı̄tat na vEtuŋūn
+Birom;114; bākūrū Sāābı̄tat na vEtıı̄min
+Birom;115; bākūrū Sāābı̄tat na vEtaāma
+Birom;116; bākūrū Sāābı̄tat na vErwı̄ı̄t
+Birom;117; bākūrū Sāābı̄tat na vESāātat
+Birom;118; bākūrū Sāābı̄tat na vESāāba
+Birom;119; bākūrū Sāābı̄tat na vESāāgwı̄niŋ
+Birom;120; bākūrū Sāābı̄ba
