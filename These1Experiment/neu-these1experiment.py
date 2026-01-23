@@ -14,11 +14,11 @@ sprachen = sorted(sprachen)
 
 
 step_width = 10
-learning_range = 1000
+learning_range = 40
 
 data = {}
 #['Kutenai',,'Purepecha''Tongan-Telephone-Style','Yupik',
-for language in sprachen:
+for language in ['de']:
     total_lexicon = create_lexicon(language, set_limit = learning_range)
     if not language in list(data.keys()): # and len(total_lexicon) > 98: #True: #len(total_lexicon) > 998 and not language in list(data.keys()):
         knowledge = {v.mapping[-1]:v.root for v in total_lexicon}

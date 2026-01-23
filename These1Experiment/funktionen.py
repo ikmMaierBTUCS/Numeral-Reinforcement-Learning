@@ -64,11 +64,12 @@ class SCFunction:
             #if not type(coeff) is int and not type(coeff) is float:
                 #print(type(coeff))
                 #raise TypeError("All coefficients of the mapping have to be integers or floats")
-        self.root=root
-        self.inputrange=i
-        self.mapping=mapping
+
+        # Deduplicate using __hash__ and __eq__
+        dedup_inputrange = [list(dict.fromkeys(comp)) for comp in i]
+
         if c == []:
-            self.confirmed_inputrange=i
+            dedup_confirmed = [comp.copy() for comp in dedup_inputrange]
         else:
             # Validate confirmed_inputrange format
             if not type(c) is list:
@@ -83,7 +84,12 @@ class SCFunction:
                     if not type(entry) is Vocabulary and not type(entry) is SCFunction:
                         print(type(entry))
                         raise TypeError("All entries of confirmed component domains have to be Vocabulary or SCFunction")
-            self.confirmed_inputrange=c
+            dedup_confirmed = [list(dict.fromkeys(comp)) for comp in c]
+
+        self.root = root
+        self.inputrange = dedup_inputrange
+        self.mapping = mapping
+        self.confirmed_inputrange = dedup_confirmed
     def __eq__(self,other):
         if isinstance(self,other.__class__):
             if self.root != other.root or self.mapping != other.mapping:
@@ -333,7 +339,7 @@ class SCFunction:
             else:
                 # check if self predicts correct value for mergee
                 insert=self.insert([mergee.inputrange[comp][0] for comp in range(mergee.dimension())])
-                if insert.mapping[-1] == mergee.mapping[-1]:
+                if round(insert.mapping[-1]) == round(mergee.mapping[-1]):
                     vereinigte_funktion = SCFunction(self.root,[self.inputrange[comp] + mergee.inputrange[comp] for comp in range(self.dimension())], self.mapping, c = [self.confirmed_inputrange[comp] + mergee.inputrange[comp] for comp in range(self.dimension())])
                     return vereinigte_funktion
                 else:
@@ -611,7 +617,6 @@ class SCFunction:
     def verstarke(self,lexicon,orakel,printb=True,aux_lex=[]):
         if self.dimension() == 0:
             return self
-        copy = self
         candidates_for_abstraction = []
         upper_limit = sum([max([0,coeff]) for coeff in self.mapping])
         for entry in lexicon:
@@ -631,9 +636,9 @@ class SCFunction:
         
         verstarkter_definitionsbereich = [self.inputrange[comp].copy() for comp in range(self.dimension())]
         for comp in range(self.dimension()):
-            if len(copy.inputrange[comp]) > 1:
+            if len(set(self.inputrange[comp])) > 1:
                 for candidate in candidates_for_abstraction:
-                    if not candidate in copy.inputrange[comp]:
+                    if not candidate in self.inputrange[comp]:
                         eingabekombinationen = []
                         for c in range(self.dimension()):
                             if c == comp:
@@ -646,100 +651,13 @@ class SCFunction:
                         entwurfe = []
                         for eingabe in cartesian_product(eingabekombinationen):
                             entwurfe += [self.insert(list(eingabe))]
-                        print(entwurfe)
+                        #print(entwurfe)
                         if orakel.antwort(entwurfe):
                             verstarkter_definitionsbereich[comp] += [candidate]
                             if printb: print('Input '+candidate.root+' added to input slot '+str(comp)+' of '+self.root)
         verstarkte_funktion = SCFunction(self.root,verstarkter_definitionsbereich,self.mapping,self.confirmed_inputrange)
         return verstarkte_funktion
 
-                            
-                        
-
-        invariant_slots = []
-        for comp in range(copy.dimension()):
-            if len(copy.inputrange[comp]) == 1:
-                invariant_slots += [comp]
-        if len(invariant_slots) == copy.dimension():
-            return copy
-        # construct set of all input combinations to try out (under omission of invariant_slots)
-        # ADJUST THE FOLLOWING IF SUPERVISOR NOT OMNISCIENT
-        if True: #aux_lex == []:
-            #input_combinations = cartesian_product((copy.dimension() - len(invariant_slots)) * [candidates_for_abstraction])
-        #else:
-            input_combinations = []
-            for varied_slot in range(copy.dimension()):
-                components = []
-                for comp in range(copy.dimension()):
-                    if comp in invariant_slots:
-                        pass
-                    elif comp == varied_slot:
-                        components += [candidates_for_abstraction]
-                    else: 
-                        components += [[self.inputrange[comp][1]]]
-                        #components += [candidates_for_abstraction + self.inputrange[comp]]
-                input_combinations += cartesian_product(components)
-        for combination in input_combinations:
-            cand = []
-            for comp in range(copy.dimension()):
-                if comp in invariant_slots:
-                    cand += [copy.inputrange[comp][0]]
-                else:
-                    cand += [combination[0]]
-                    combination = combination[1:]
-            #word_cand = copy.insert([candc.sample() for candc in cand])
-            template_cand = copy.insert(cand)
-            #print('word_candidate:',template_cand.root)
-            proposed_inputrange = []
-            entry_is_new = False
-            for comp in range(copy.dimension()):
-                if cand[comp].root in [entr.root for entr in copy.inputrange[comp]]:
-                    proposed_inputrange += [copy.inputrange[comp]]
-                else:
-                    proposed_inputrange += [copy.inputrange[comp]+[cand[comp]]]
-                    entry_is_new = True
-            if entry_is_new:
-                proposal = SCFunction(copy.root,proposed_inputrange,copy.mapping,copy.confirmed_inputrange)
-                proposal_is_new = True
-                word_cand = template_cand.sample()
-                for entr in lexicon:
-                    for word in entr.all_outputs():
-                        if (word_cand.root == word.root) ^ (word_cand.mapping[-1] == word.mapping[-1]):
-                            #print('proposal ' + word_cand.root + ' ' + str(word_cand.mapping[-1]) + ' already covered by ' + word.root + ' ' + str(word.mapping[-1]))
-                            proposal_is_new = False
-                            break
-                    if not proposal_is_new:
-                        break
-                # for certain supervisor types redundant proposals are welcome to overwrite existing ones
-                if not type(supervisor) == list and supervisor.style in ['arithmetic','dummy']:
-                    proposal_is_new = True
-                if proposal_is_new and proposal.actual_dimension() == copy.actual_dimension():
-                    #print('Can I also say '+ word_cand.root + '?')
-                    if type(supervisor) == list:
-                        for v in supervisor:
-                            if word_cand.root == v.word:
-                                #print('Oracle: Yes')
-                                cand_parse = advanced_parse(word_cand.mapping[-1],word_cand.root,lexicon,False,False)
-                                if cand_parse.root == self.root:                                
-                                    if v.number != word_cand.mapping[-1]:
-                                        print('LEARNING ERROR: ' + v.word + ' is ' + str(v.number) + ' but learner assumes ' + str(word_cand.mapping[-1]))
-                                    copy = proposal
-                                    #copy.present()
-                                else:
-                                    pass
-                                    if printb: print('OK, but I think this is not related')
-                                break
-                            else:
-                                pass
-                                #print('Oracle: No')
-                    else:
-                        if supervisor.answer(template_cand):
-                            #if printb: print('Oracle: Yes also '+ word_cand.root)
-                            copy = proposal
-                        else:
-                            pass
-                            #if printb: print('Oracle: No not '+ word_cand.root)
-        return copy
 
     def reinforce(self,lexicon,supervisor,printb=True,aux_lex=[]):
         if self.dimension() == 0:
@@ -966,6 +884,10 @@ class Oracle:
             else:
                 copy = Oracle('manual')
                 return copy.answer(proposal)
+            
+        elif self.style == 'arithmetic' or self.style == 'dummy':
+            #Since the code only make s arithmetically plausible proposals, everything is excepted
+            return True
             
     def answer(self,proposal, tol = 0,show_plot=True):
         if self.style == 'statistic':
@@ -1660,62 +1582,92 @@ def shuffle_lexicon(lexicon):
     return shuffled_lexicon
 
 def solve_lexicon_clashes(entry1, entry2):
+    print('Solving clashes between ' + entry1.root + ' and ' + entry2.root + '...')
+    entry1.present()
+    entry2.present()
     #determine all (confirmed) values of entry2
     # values2 icludes all input-output pairs
-    values2 = [(inp,sum([inp[i]*entry2.mapping[i] for i in range(entry2.dimension())]) + entry2.mapping[-1]) for inp in cartesian_product(entry2.number_inputs())]
+    io_values2 = [(inp,sum([inp[i]*entry2.mapping[i] for i in range(entry2.dimension())]) + entry2.mapping[-1]) for inp in cartesian_product(entry2.number_inputs())]
     #confirmed_values2 includes all confirmed outputs
-    confirmed_values2 = [sum([inp[i]*entry2.mapping[i] for i in range(entry2.dimension())]) + entry2.mapping[-1] for inp in cartesian_product(entry2.number_inputs(only_confirmed = True))]
+    confirmed_io_values2 = [sum([inp[i]*entry2.mapping[i] for i in range(entry2.dimension())]) + entry2.mapping[-1] for inp in cartesian_product(entry2.number_inputs(only_confirmed = True))]
 
     defeated_values2 = []
     
     # rebuild inputrange of entry1
     new_inputrange = []
     for comp in range(entry1.dimension()):
-        new_comp =[]
-        for entr in entry1.inputrange[comp]:
-            # check if entry is confirmed
-            if entr in entry1.confirmed_inputrange[comp]:
-                new_comp += [entr]
-            #otherwise
-            else:
-                # build all number outputs caused by this entry
-                inputs_involving_entr = [i for i in cartesian_product(entry1.number_inputs()) if i[comp] == entr.mapping[-1]]
-                io = [(inp,sum([entry1.mapping[i]*inp[i] for i in range(entry1.dimension())]) + entry1.mapping[-1]) for inp in inputs_involving_entr]
-                # check if any output clashes with a confirmed output of entry2
-                if not any([ou[1] in confirmed_values2 for ou in io]):
-                    # check if any output clashes with any output of entry2
-                    clash_wins = 0
-                    clash_losses = 0
-                    clashing_values2 = []
-                    for v in values2:
-                        break_now = False
-                        for ou in io:
-                            if v[1] == ou[1]:
-                                clashing_values2 += [v[1]]
-                                input1 = ou[0]
-                                input2 = v[0]
-                                unconfirmed_components1 = [input1[i] for i in range(len(input1)) if input1[i] not in entry1.number_inputs(only_confirmed = True)[i]]
-                                unconfirmed_components2 = [input2[i] for i in range(len(input2)) if input2[i] not in entry2.number_inputs(only_confirmed = True)[i]]
-                                if sum(unconfirmed_components2) < sum(unconfirmed_components1):
-                                    clash_losses += 1
-                                elif sum(unconfirmed_components2) > sum(unconfirmed_components1):
-                                    clash_wins += 1
-                                elif sum(unconfirmed_components2) == sum(unconfirmed_components1):
-                                    pass           
-                                if abs(clash_wins - clash_losses) > 3:
-                                    break_now = True
-                                    break
-                        if break_now:
-                            break
-                    if clash_wins >= clash_losses:
-                        new_comp += [entr]
-                        defeated_values2 += clashing_values2
+        if len(entry1.inputrange[comp]) == 1:
+            new_comp = entry1.inputrange[comp]
+        else:
+            new_comp =[]
+            for entr in entry1.inputrange[comp]:
+                # check if entry is confirmed
+                if entr in entry1.confirmed_inputrange[comp]:
+                    new_comp += [entr]
+                #otherwise
+                else:
+                    # build all number outputs caused by this entry
+                    inputs_involving_entr = [i for i in cartesian_product(entry1.number_inputs()) if i[comp] == entr.mapping[-1]]
+                    eingabekombinationen = []
+                    for c in range(entry1.dimension()):
+                        if c == comp:
+                            eingabekombinationen += [entr.all_outputs(only_confirmed = True)]
+                        else:
+                            kombinationskomponente = []
+                            for e in entry1.inputrange[c]:
+                                kombinationskomponente += e.all_outputs()
+                            eingabekombinationen += [kombinationskomponente]
+                    io = []
+                    for eingabe in cartesian_product(eingabekombinationen):
+                        io += [([e.mapping[-1] for e in eingabe],entry1.insert(list(eingabe)).mapping[-1])]                
+                    
+                    #io = [(inp,sum([entry1.mapping[i]*inp[i] for i in range(entry1.dimension())]) + entry1.mapping[-1]) for inp in inputs_involving_entr]
+                    # if any output clashes with a confirmed output of entry2 then skip
+                    if not any([ou[1] in confirmed_io_values2 for ou in io]):
+                        # check if any output clashes with any output of entry2
+                        clash_wins = 0
+                        clash_losses = 0
+                        clashing_values2 = []
+                        np.random.shuffle(io)
+                        np.random.shuffle(io_values2)
+                        #print(io_values2)
+                        #print(io)
+                        for v in io_values2:
+                            break_now = False
+                            for ou in io:
+                                if round(v[1]) == round(ou[1]):
+                                    clashing_values2 += [v[1]]
+                                    input1 = ou[0]
+                                    input2 = v[0]
+                                    unconfirmed_components1 = [input1[i] for i in range(len(input1)) if input1[i] not in entry1.number_inputs(only_confirmed = True)[i]]
+                                    unconfirmed_components2 = [input2[i] for i in range(len(input2)) if input2[i] not in entry2.number_inputs(only_confirmed = True)[i]]
+                                    if sum(unconfirmed_components2) < sum(unconfirmed_components1):
+                                        clash_losses += 1
+                                    elif sum(unconfirmed_components2) > sum(unconfirmed_components1):
+                                        clash_wins += 1
+                                    elif sum(unconfirmed_components2) == sum(unconfirmed_components1):
+                                        pass           
+                                    if abs(clash_wins - clash_losses) > 3:
+                                        break_now = True
+                                        break
+                            if break_now:
+                                break
+                        if clash_wins >= clash_losses:
+                            #print(entry1.root + ' keeps the input ' + entr.root + ' in component ' + str(comp) + ' despite clashes against entries of ' + entry2.root + '.')
+                            new_comp += [entr]
+                            defeated_values2 += clashing_values2
+                        else:
+                            pass
+                            #print(entry1.root + ' does not use the input ' + entr.root + ' in component ' + str(comp) + ' because it loses clash against another entry of ' + entry2.root + '.')
+                    else:
+                        pass
+                        #print(entry1.root + ' does not use the input ' + entr.root + ' in component ' + str(comp) + ' because it clashes with confirmed value of' + entry2.root + '.')
         new_inputrange += [new_comp]   
     #defeated_values2 += [ou.mapping[-1] for ou in entry.all_outputs(only_comfirmed = True)]
     return SCFunction(entry1.root,new_inputrange,entry1.mapping,entry1.confirmed_inputrange)
 
 
-def learn_lexicon(lexicon,orakel,initial_lexicon=[],version='a',printb=True,normalize=True):
+def learn_lexicon(lexicon,orakel,initial_lexicon=[],resolve_synonyms=False,version='a',printb=True,normalize=True):
     #if printb: print('Learning '+language)
     #supervisor = lexicon
     learnerlex = initial_lexicon
@@ -1760,7 +1712,14 @@ def learn_lexicon(lexicon,orakel,initial_lexicon=[],version='a',printb=True,norm
                     merger = functions_with_equal_template[0]
                     functions_with_equal_template = functions_with_equal_template[1:]
                 gelernte_funktion = merger.vereinige(parse, functions_with_equal_template, printb=printb, trust_affinity=False) # versuche zu mergen
-                if set(merger.all_outputs()).issubset(set(gelernte_funktion.all_outputs())): # wenn mergen effektiv war
+                if gelernte_funktion != parse:
+                    learnerlex.remove(merger) # dann entferne den alten Eintrag
+                    for function in functions_with_equal_template:
+                        if function.all_outputs().issubset(gelernte_funktion.all_outputs()):
+                            learnerlex.remove(function)
+                
+                if merger.actual_dimension() < gelernte_funktion.actual_dimension(): # wenn mergen die dimension erweitert hat
+                    #learnerlex.remove(merger) # dann entferne den alten Eintrag
                     gelernte_funktion = gelernte_funktion.verstarke(learnerlex,orakel,printb)
 
             if not understood:
@@ -1771,53 +1730,59 @@ def learn_lexicon(lexicon,orakel,initial_lexicon=[],version='a',printb=True,norm
             updated_entries = [gelernte_funktion]
 
             # reinforce learnerlex with gelernte_funktion
-            for i in range(len(learnerlex)):
+            for i in range(len(learnerlex)-1, -1, -1):
                 if sum(learnerlex[i].mapping) > sum(gelernte_funktion.mapping) and learnerlex[i].dimension() > 0: 
                     #if printb: print('Attempting to reinforce ' + learnerlex[i].root + ' with ' + learned.root)
                     new_entry = learnerlex[i].reinforce([gelernte_funktion],orakel,printb,aux_lex=learnerlex)
-                else:
-                    new_entry = learnerlex[i]
-                if any([len(new_entry.inputrange[j]) > len(learnerlex[i].inputrange[j]) for j in range(new_entry.dimension())]):
-                    updated_entries += [new_entry]
+                    if any([len(new_entry.inputrange[j]) > len(learnerlex[i].inputrange[j]) for j in range(new_entry.dimension())]):
+                        del learnerlex[i]
+                        updated_entries += [new_entry]
+                #else:
+                    #new_entry = learnerlex[i]
                 #learnerlex[i] = new_entry
                 #if printb: entry.present()
 
+            # resolve lexicon clashes
             if orakel.style == 'arithmetic':
-                for entry in learnerlex:
-                    gelernte_funktion = solve_lexicon_clashes(gelernte_funktion,entry)
-                for entry in learnerlex:
-                    entry = solve_lexicon_clashes(entry,gelernte_funktion)
-
-            # remove redundant entries and add updated entries to learnerlexicon
-            for ue in updated_entries:
-                learned_outputs = ue.all_outputs()
-                for entry in learnerlex:
-                    # check if all confirmed outputs of entry are covered by learned 
-                    all_covered = True
-                    for ou in entry.all_outputs(only_confirmed = True):
-                        covered = False
-                        for lo in learned_outputs:
-                            if [round(i) for i in ou.mapping] == [round(i) for i in lo.mapping] and ou.root == lo.root:
-                                covered = True
-                        if not covered:
-                            all_covered = False
-                            break
-                    if all_covered:
-                        if printb:
-                            print('Update entry:')
-                            entry.present()
-                            print('-->')
-                            ue.present()
-                        learnerlex.remove(entry)
+                for i in range(len(learnerlex)):
+                    #print('Resolving clashes between ' + learnerlex[i].root + ' and ' + gelernte_funktion.root)
+                    learnerlex[i] = solve_lexicon_clashes(learnerlex[i],gelernte_funktion)
+                for ue_idx in range(len(updated_entries)):
+                    for entry in learnerlex:
+                        #print('Resolving clashes between ' + updated_entries[ue_idx].root + ' and ' + entry.root)
+                        updated_entries[ue_idx] = solve_lexicon_clashes(updated_entries[ue_idx],entry)
+            else:
+                # remove redundant entries from learnerlexicon
+                for ue in updated_entries:
+                    learned_outputs = ue.all_outputs()
+                    for entry in learnerlex:
+                        # check if all confirmed outputs of entry are covered by learned 
+                        all_covered = True
+                        for ou in entry.all_outputs(only_confirmed = True):
+                            covered = False
+                            for lo in learned_outputs:
+                                if [round(i) for i in ou.mapping] == [round(i) for i in lo.mapping] and ou.root == lo.root:
+                                    covered = True
+                            if not covered:
+                                all_covered = False
+                                break
+                        if all_covered:
+                            if printb:
+                                print('Update entry:')
+                                entry.present()
+                                print('-->')
+                                ue.present()
+                            learnerlex.remove(entry)
             
-                # add learned to learnerlex
-                learnerlex += [ue]                
+            # add learned to learnerlex
+            learnerlex += updated_entries                
             
             #print()
             #print('Entries: ')
             #for entry in learnerlex:
                 #if printb: entry.present()
             #print()
+            
     #reorganize all inputranges so that they only contain scfunctions, no vocabulary
     if normalize: learnerlex = normalize_scf_lexicon(learnerlex,printb)
     #if printb: print('Learned '+str(len(lexicon))+' words and structured them in '+str(len(learnerlex))+' functions.')
