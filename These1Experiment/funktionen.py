@@ -269,7 +269,7 @@ class SCFunction:
             else:
                 new_confirmed_inputrange += [self.confirmed_inputrange[comp] + mergee.confirmed_inputrange[comp]]
         insert=self.insert([mergee.inputrange[comp][0] for comp in range(mergee.dimension())])
-        if insert.mapping[-1] == mergee.mapping[-1]:
+        if round(insert.mapping[-1]) == round(mergee.mapping[-1]):
             #print('Current mapping predicts value of '+insert.root+' correctly')
             return SCFunction(self.root,new_inputrange,self.mapping, new_confirmed_inputrange)
         else:
@@ -729,7 +729,7 @@ class SCFunction:
                 word_cand = template_cand.sample()
                 for entr in lexicon:
                     for word in entr.all_outputs():
-                        if (word_cand.root == word.root) ^ (word_cand.mapping[-1] == word.mapping[-1]):
+                        if (word_cand.root == word.root) ^ (round(word_cand.mapping[-1]) == round(word.mapping[-1])):
                             #print('proposal ' + word_cand.root + ' ' + str(word_cand.mapping[-1]) + ' already covered by ' + word.root + ' ' + str(word.mapping[-1]))
                             proposal_is_new = False
                             break
@@ -855,7 +855,7 @@ class Oracle:
             if isinstance(entwurf, list):
                 entwurf = entwurf
             while True:
-                antwort = input("Does " + proposal[0] + " mean " + str(proposal[1]) + "? (y/n): ").strip().lower()
+                antwort = input("Does " + entwurf[0] + " mean " + str(entwurf[1]) + "? (y/n): ").strip().lower()
                 if antwort == "y":
                     return True
                 elif antwort == "n":
@@ -1521,15 +1521,20 @@ def grammar_parse(word,lexicon):
 
 def grammar_generate(number,lexicon):
     for scf in lexicon:
+        print('Search in function')
+        scf.present()
         if all([c >= 0 for c in scf.mapping]):
             mini = sum(scf.mapping)
-            maxi = (sum(scf.mapping) - 1)**2
+            maxi = max([2,(sum(scf.mapping) - 1)**2])
         else:
             mini = sum(scf.mapping) / 2
             maxi = (sum([max(0,c) for c in scf.mapping]))**2
-        if number > mini and number < maxi:
+        print('values between ' + str(mini) + ' and ' + str(maxi) + ' are expected.')
+        if number >= mini and number <= maxi:
             for ou in scf.all_outputs():
-                if ou.mapping[-1] == number:
+                ou.present()
+                if round(ou.mapping[-1]) == round(number):
+                    print('numeral found')
                     return ou.root
     return ''
 
@@ -1607,7 +1612,7 @@ def solve_lexicon_clashes(entry1, entry2):
                 #otherwise
                 else:
                     # build all number outputs caused by this entry
-                    inputs_involving_entr = [i for i in cartesian_product(entry1.number_inputs()) if i[comp] == entr.mapping[-1]]
+                    inputs_involving_entr = [i for i in cartesian_product(entry1.number_inputs()) if round(i[comp]) == round(entr.mapping[-1])]
                     eingabekombinationen = []
                     for c in range(entry1.dimension()):
                         if c == comp:
@@ -1673,8 +1678,13 @@ def learn_lexicon(lexicon,orakel,initial_lexicon=[],resolve_synonyms=False,versi
     learnerlex = initial_lexicon
     samples = 0
     orakel_errors = []
+    minimum = 1
     for voc in lexicon:
         #update statistical orakel based on data of new confirmed word
+        if orakel.style in ['manual','hybrid']:
+            voc = frage_nach_zahlwort(learnerlex,minimum=minimum)
+            minimum = voc.number
+
         if orakel.style in ['statistic','hybrid']:
             orakel.update([voc])
 
@@ -1685,7 +1695,7 @@ def learn_lexicon(lexicon,orakel,initial_lexicon=[],resolve_synonyms=False,versi
             if orakel.style in ['statistic','hybrid'] and voc.mapping[-1] not in orakel.data.keys():
                 for entr in learnerlex:
                     for o in entr.all_outputs:
-                        if o.mapping[-1] == voc.mapping[-1]:
+                        if round(o.mapping[-1]) == round(voc.mapping[-1]):
                             print("ORAKEL ERROR: " + str(voc.mapping[-1]) + " apparently means " + voc.word + " and not " + o.word)
                             orakel_errors += [voc.mapping[-1]]
                         
@@ -1715,7 +1725,7 @@ def learn_lexicon(lexicon,orakel,initial_lexicon=[],resolve_synonyms=False,versi
                 if gelernte_funktion != parse:
                     learnerlex.remove(merger) # dann entferne den alten Eintrag
                     for function in functions_with_equal_template:
-                        if function.all_outputs().issubset(gelernte_funktion.all_outputs()):
+                        if function.all_outputs()[0] in gelernte_funktion.all_outputs():
                             learnerlex.remove(function)
                 
                 if merger.actual_dimension() < gelernte_funktion.actual_dimension(): # wenn mergen die dimension erweitert hat
@@ -1856,3 +1866,18 @@ def normalize_scf_lexicon(learnerlex, printb= True):
             new_inputrange += [new_comp]
         new_learnerlex += [SCFunction(lexentr.root,new_inputrange,lexentr.mapping,lexentr.confirmed_inputrange)]
     return new_learnerlex
+
+def frage_nach_zahlwort(lexicon, minimum=1):
+    while True:
+        print('Find word for '+str(minimum))
+        word = grammar_generate(minimum,lexicon)
+        print(minimum,word)
+        if word == '':
+            while True:
+                antwort = input("What means " + str(minimum) + "?").strip().lower()
+                if antwort == "":
+                    print('Please type in the word for ' + str(minimum))
+                else:
+                    return Vocabulary(minimum,antwort)
+
+        minimum += 1

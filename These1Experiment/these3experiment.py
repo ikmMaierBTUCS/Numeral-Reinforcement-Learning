@@ -13,7 +13,7 @@ sprachen =package_num2words+ package_languagesandnumbers + ['Birom','Yoruba']
 sprachen = sorted(sprachen)
 
 
-step_width = 10
+step_width = 1
 learning_range = 1000
 
 data = {}
@@ -22,7 +22,7 @@ for language in ['de']: # sprachen:
     total_lexicon = create_lexicon(language, set_limit = learning_range)
     if not language in list(data.keys()): # and len(total_lexicon) > 98: #True: #len(total_lexicon) > 998 and not language in list(data.keys()):
         knowledge = {v.mapping[-1]:v.root for v in total_lexicon}
-        orakel = Oracle('arithmetic')
+        orakel = Oracle('manual')
         data[language] = []
         
         for i in range(1):
