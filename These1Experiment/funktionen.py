@@ -618,7 +618,8 @@ class SCFunction:
         if self.dimension() == 0:
             return self
         candidates_for_abstraction = []
-        upper_limit = sum([max([0,coeff]) for coeff in self.mapping])
+        upper_limit = round(sum([max([0,coeff]) for coeff in self.mapping]) - 1)
+        print('upper_limit: ',upper_limit)
         for entry in lexicon:
             # for dummy supervisor we allow a little more tolerance
             if False: # not type(supervisor) == list and supervisor.style in ['dummy']:
@@ -631,7 +632,7 @@ class SCFunction:
                 #if all([fe.mapping[-1] < upper_limit for fe in entry.all_outputs(only_confirmed = True)]):
                     #candidates_for_abstraction += [entry]
             else:
-                if all([fe.mapping[-1] < upper_limit for fe in entry.all_outputs(only_confirmed = True)]):
+                if all([fe.mapping[-1] < upper_limit for fe in entry.all_outputs(only_confirmed = ((orakel.style == 'manual') == False))]):
                     candidates_for_abstraction += [entry]
         
         verstarkter_definitionsbereich = [self.inputrange[comp].copy() for comp in range(self.dimension())]
@@ -652,7 +653,12 @@ class SCFunction:
                         for eingabe in cartesian_product(eingabekombinationen):
                             entwurfe += [self.insert(list(eingabe))]
                         #print(entwurfe)
-                        if orakel.antwort(entwurfe):
+                        if any([round(entw.mapping[-1]) in [round(ou.mapping[-1]) for ou in le.all_outputs()] for entw in entwurfe for le in lexicon]):
+                            pass
+                        elif any([(entw.root,round(entw.mapping[-1])) in [(ou.root,round(ou.mapping[-1])) for ou in le.all_outputs()] for entw in entwurfe for le in lexicon]):
+                            verstarkter_definitionsbereich[comp] += [candidate]
+                            if printb: print('Input '+candidate.root+' added to input slot '+str(comp)+' of '+self.root)
+                        elif orakel.antwort(entwurfe):
                             verstarkter_definitionsbereich[comp] += [candidate]
                             if printb: print('Input '+candidate.root+' added to input slot '+str(comp)+' of '+self.root)
         verstarkte_funktion = SCFunction(self.root,verstarkter_definitionsbereich,self.mapping,self.confirmed_inputrange)
@@ -855,7 +861,7 @@ class Oracle:
             if isinstance(entwurf, list):
                 entwurf = entwurf
             while True:
-                antwort = input("Does " + entwurf[0] + " mean " + str(entwurf[1]) + "? (y/n): ").strip().lower()
+                antwort = input("Does " + entwurf[0] + " mean " + str(round(entwurf[1])) + "? (y/n): ").strip().lower()
                 if antwort == "y":
                     return True
                 elif antwort == "n":
@@ -1524,11 +1530,11 @@ def grammar_generate(number,lexicon):
         print('Search in function')
         scf.present()
         if all([c >= 0 for c in scf.mapping]):
-            mini = sum(scf.mapping)
-            maxi = max([2,(sum(scf.mapping) - 1)**2])
+            mini = round(sum(scf.mapping))
+            maxi = round(sum(scf.mapping))**2
         else:
-            mini = sum(scf.mapping) / 2
-            maxi = (sum([max(0,c) for c in scf.mapping]))**2
+            mini = round(sum(scf.mapping) / 2)
+            maxi = round((sum([max(0,c) for c in scf.mapping])))**2
         print('values between ' + str(mini) + ' and ' + str(maxi) + ' are expected.')
         if number >= mini and number <= maxi:
             for ou in scf.all_outputs():
@@ -1874,7 +1880,7 @@ def frage_nach_zahlwort(lexicon, minimum=1):
         print(minimum,word)
         if word == '':
             while True:
-                antwort = input("What means " + str(minimum) + "?").strip().lower()
+                antwort = input("What means " + str(minimum) + "? ").strip().lower()
                 if antwort == "":
                     print('Please type in the word for ' + str(minimum))
                 else:
